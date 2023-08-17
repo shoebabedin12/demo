@@ -20,7 +20,7 @@ $(document).ready(function () {
   // buyer slider
   var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4.4,
-    spaceBetween: 30,
+    spaceBetween: 40,
     // centeredSlides: true,
     loop: false, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
@@ -33,17 +33,23 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        769: {
+        1024: {
           slidesPerView: 4.4,
+          slidesPerGroup: 1,
+        },
+        769: {
+          slidesPerView: 3.4,
           slidesPerGroup: 1,
         },
         600: {
           slidesPerView: 2.4,
           slidesPerGroup: 1,
+          spaceBetween: 16,
         },
         300: {
-          slidesPerView: 1.4,
+          slidesPerView: 1.2,
           slidesPerGroup: 1,
+          spaceBetween: 16,
         },
       },
   });
