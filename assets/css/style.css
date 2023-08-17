@@ -193,7 +193,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* who-we-are */
 
 .who-we-are .container-fluid {
-  padding: 165px 0 131px;
+  padding-top: 165px;
+  padding-bottom: 131px;
   border-bottom: 1px solid #eee;
 }
 .who-we-are .row:first-child {
