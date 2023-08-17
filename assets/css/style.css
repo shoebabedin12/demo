@@ -348,7 +348,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 .our-buyer .swiper .swiper-slide .swiper-button-next {
   top: 50%;
-  left: -4.4rem;
+  left: -3.7rem;
   right: auto;
   max-width: 100px;
   max-height: 100px;
@@ -583,12 +583,25 @@ footer hr {
   /* .who-we-are */
 
   /* <!-- our buyer --> */
+  .our-buyer h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .our-buyer p {
+    font-size: 16px;
+    line-height: 29px;
+  }
   .our-buyer .slider-arrows {
     margin-left: 0;
     margin-right: auto;
   }
   .our-buyer .swiper {
     left: 1rem;
+  }
+  .our-buyer .swiper .swiper-slide .swiper-button-next {
+    left: -2.4rem;
+    max-width: 64px;
+    max-height: 64px;
   }
   /* <!-- our buyer --> */
 
@@ -705,6 +718,23 @@ footer hr {
   /* .who-we-are */
 
   /* <!-- our buyer --> */
+  .our-buyer h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .our-buyer p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .our-buyer .swiper .swiper-slide .content h3 {
+    font-size: 23px;
+  }
+  .our-buyer .swiper .swiper-slide .content h4 {
+    font-size: 17px;
+  }
+  .our-buyer .swiper .swiper-slide .content p {
+    font-size: 16px;
+  }
   .our-buyer .slider-arrows {
     margin-left: 0;
     margin-right: auto;
@@ -714,6 +744,11 @@ footer hr {
   }
   .our-buyer .swiper .swiper-slide .img img {
     max-height: 314px;
+  }
+  .our-buyer .swiper .swiper-slide .swiper-button-next {
+    left: -2.4rem;
+    max-width: 64px;
+    max-height: 64px;
   }
   /* <!-- our buyer --> */
   /* home */
