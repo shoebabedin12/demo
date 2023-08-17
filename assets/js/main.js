@@ -40,6 +40,7 @@ $(document).ready(function () {
         769: {
           slidesPerView: 3.4,
           slidesPerGroup: 1,
+          spaceBetween: 16,
         },
         600: {
           slidesPerView: 2.4,

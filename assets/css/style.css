@@ -44,15 +44,15 @@ header .navbar .navbar-brand {
   padding: 0px 0;
 }
 header .navbar .navbar-nav {
-  gap: 51px;
+  gap: 13px;
 }
 header .navbar span .nav-link.btn {
   display: none;
 }
 header .navbar .navbar-nav .nav-item {
   position: relative;
-  padding-top: 44px;
-  padding-bottom: 37px;
+  padding-top: 34px;
+  padding-bottom: 34px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -101,6 +101,7 @@ header .navbar .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  padding: 11px 19px;
 }
 header .navbar .navbar-nav .nav-item.active .nav-link {
   color: var(--color);
@@ -109,6 +110,7 @@ header .navbar .navbar-nav .nav-item.active .nav-link {
 header .navbar .navbar-nav .nav-item .nav-link.btn {
   background: var(--color);
   color: #fff;
+
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -142,7 +144,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   padding: 230px 0;
 }
 .hero .swiper h4 {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 25px 40px 25px 25px;
   width: 100%;
   max-width: 630px;
@@ -189,8 +191,10 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 /* hero */
 /* who-we-are */
-.who-we-are {
-  padding: 165px 0 260px;
+
+.who-we-are .container-fluid {
+  padding: 165px 0 131px;
+  border-bottom: 1px solid #eee;
 }
 .who-we-are .row:first-child {
   margin-bottom: 71px;
@@ -201,6 +205,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 700;
   line-height: 58px;
+  margin-bottom: 30px;
 }
 .who-we-are p {
   color: var(--color3);
@@ -250,11 +255,14 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   justify-content: center;
   border: 2px solid rgba(231, 76, 60, 0.1);
 }
-
+.who-we-are .content p {
+  max-width: 300px;
+}
 /* who-we-are */
 
 /* our-buyer */
 .our-buyer {
+  padding-top: 130px;
   overflow: hidden;
 }
 .our-buyer h2 {
@@ -264,6 +272,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 700;
   line-height: 58px; /* 152.632% */
+  margin-bottom: 16px;
 }
 .our-buyer p {
   color: var(--color3);
@@ -271,6 +280,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 400;
   line-height: 29px; /* 181.25% */
+  margin-bottom: 0;
 }
 .our-buyer .slider-arrows {
   max-width: 80px;
@@ -297,10 +307,10 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 
 .our-buyer .slider-arrows div.swiper-button-disabled {
-  border: 2px solid #dddddd;
+  border: 2px solid #a1a1a1;
 }
 .our-buyer .slider-arrows div.swiper-button-disabled svg path {
-  fill: #dddddd;
+  fill: #a1a1a1;
 }
 
 .swiper-button-next:after,
@@ -312,7 +322,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   margin-top: 60px;
   margin-bottom: 165px;
   left: 7rem;
-  /* max-width: 1899px; */
+  max-width: 1899px;
 }
 
 .our-buyer .swiper .swiper-slide .img {
@@ -331,6 +341,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 900;
   line-height: 29px;
+  margin-bottom: 11px;
 }
 .our-buyer .swiper .swiper-slide .content h4 {
   color: var(--color1);
@@ -338,6 +349,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 700;
   line-height: 29px;
+  margin-bottom: 11px;
 }
 .our-buyer .swiper .swiper-slide .content p {
   color: var(--color3);
@@ -345,10 +357,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 400;
   line-height: 29px;
+  margin-bottom: 0px;
 }
 .our-buyer .swiper .swiper-slide .swiper-button-next {
   top: 50%;
-  left: -3.7rem;
+  left: -3.5rem;
   right: auto;
   max-width: 100px;
   max-height: 100px;
@@ -504,7 +517,7 @@ footer hr {
 @media (min-width: 992px) and (max-width: 1200px) {
   /* navbar */
   header .navbar .navbar-nav {
-    gap: 20px;
+    gap: 0px;
   }
   /* navbar */
   /* who-we-are */
@@ -561,8 +574,25 @@ footer hr {
   header .navbar .navbar-nav .nav-item::after {
     height: 0;
   }
+  header .navbar .navbar-nav .nav-item:last-child {
+    display: none;
+  }
+  header .navbar .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(255, 0, 0, 0.329);
+  }
+  header .navbar .navbar-nav .nav-item:nth-child(6) {
+    border-bottom: 0px solid rgba(255, 0, 0, 0.329);
+  }
+  header .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0;
+  }
   /* header */
   /* home */
+  /* hero slider */
+  .hero .swiper {
+    padding: 151px 0;
+  }
+  /* hero slider */
   /* .who-we-are */
   .who-we-are {
     text-align: center;
@@ -608,6 +638,9 @@ footer hr {
   /* home */
 
   /* footer */
+  footer h4 {
+    margin-top: 20px;
+  }
   .tiny-footer p {
     text-align: right;
   }
@@ -626,7 +659,6 @@ footer hr {
   }
   header .navbar .navbar-nav {
     gap: 20px;
-    align-items: center;
   }
   header .navbar .mob-nav {
     display: flex;
@@ -659,19 +691,29 @@ footer hr {
     -ms-border-radius: 0;
     -o-border-radius: 0;
   }
-  header .navbar .navbar-nav .nav-item .nav-link::after {
+  header .navbar .navbar-nav .nav-item::after {
     height: 0;
   }
-  header .navbar .navbar-nav .nav-item .nav-link.btn {
+  header .navbar .navbar-nav .nav-item:last-child {
     display: none;
   }
   header .navbar .navbar-nav .nav-item {
     padding: 0 0;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.329);
+  }
+  header .navbar .navbar-nav .nav-item:nth-child(6) {
+    border-bottom: 0px solid rgba(255, 0, 0, 0.329);
+  }
+  header .navbar .navbar-nav .nav-item .nav-link {
+    padding-left: 0;
   }
   /* navbar */
 
   /* home */
   /* hero slider */
+  .hero .swiper {
+    padding: 151px 0;
+  }
   .hero .swiper h4 {
     font-size: 18px;
     line-height: 30px;
@@ -690,7 +732,7 @@ footer hr {
   /* hero slider */
 
   /* .who-we-are */
-  .who-we-are {
+  .who-we-are .container-fluid {
     text-align: center;
     padding: 75px 0 70px;
   }
@@ -718,6 +760,9 @@ footer hr {
   /* .who-we-are */
 
   /* <!-- our buyer --> */
+  .our-buyer {
+    padding-top: 70px;
+  }
   .our-buyer h2 {
     font-size: 25px;
     line-height: 39px;
@@ -725,6 +770,7 @@ footer hr {
   .our-buyer p {
     font-size: 16px;
     line-height: 29px;
+    margin-bottom: 17px;
   }
   .our-buyer .swiper .swiper-slide .content h3 {
     font-size: 23px;
@@ -741,19 +787,23 @@ footer hr {
   }
   .our-buyer .swiper {
     left: 1rem;
+    margin-bottom: 65px;
   }
   .our-buyer .swiper .swiper-slide .img img {
     max-height: 314px;
   }
   .our-buyer .swiper .swiper-slide .swiper-button-next {
     left: -2.4rem;
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 55px;
+    max-height: 55px;
   }
   /* <!-- our buyer --> */
   /* home */
 
   /* footer */
+  footer h4 {
+    margin-top: 20px;
+  }
   .tiny-footer img {
     display: flex;
     margin: 0 auto 20px;
@@ -807,10 +857,11 @@ footer hr {
     font-size: 18px;
     border-bottom: 1px solid var(--color);
     width: fit-content;
-    margin: 20px auto;
+    margin: 20px 0;
   }
   footer ul {
-    align-items: center;
+    gap: 10px;
+    align-items: flex-start;
   }
   footer ul li a {
     font-size: 14px;
