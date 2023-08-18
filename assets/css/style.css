@@ -322,8 +322,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .our-buyer .swiper {
   margin-top: 60px;
   margin-bottom: 165px;
-  left: 7rem;
+  margin-left: 7rem;
   max-width: 1899px;
+  overflow: hidden;
 }
 
 .our-buyer .swiper .swiper-slide .img {
@@ -392,6 +393,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .production-sample .content {
@@ -447,6 +449,126 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 
 /* production sample */
+
+/* we-develop */
+.we-develop {
+  padding: 165px 0;
+}
+.we-develop h2 {
+  color: #000;
+  text-align: left;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 25px;
+}
+.we-develop .nav {
+  border: 0;
+}
+.we-develop .nav .nav-item .nav-link {
+  color: #ccc;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: 0;
+}
+.we-develop .nav .nav-item .nav-link.active {
+  color: var(--color);
+  border: 0;
+}
+.we-develop .nav .nav-item .nav-link:hover,
+.we-develop .nav .nav-item .nav-link:focus-within {
+  border: 0;
+}
+
+.we-develop .slider-arrows {
+  max-width: 80px;
+  max-height: 35px;
+  min-width: 80px;
+  min-height: 35px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.we-develop .slider-arrows div {
+  flex: 1 1 auto;
+  border: 2px solid red;
+  padding: 0;
+  margin: 0;
+  position: unset;
+  width: 100%;
+  height: 100%;
+}
+
+.we-develop .slider-arrows div.swiper-button-disabled {
+  border: 2px solid #a1a1a1;
+}
+.we-develop .slider-arrows div.swiper-button-disabled svg path {
+  fill: #a1a1a1;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+.we-develop .swiper {
+  margin-top: 60px;
+}
+.we-develop .swiper .img {
+  max-height: 441px;
+  height: 100%;
+  position: relative;
+}
+.we-develop .swiper .img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.we-develop .swiper .swiper-slide:hover .img .overlay {
+  visibility: visible;
+  opacity: 1;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.we-develop .swiper .img .overlay p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px; /* 181.25% */
+  background: #fff;
+  width: calc(100% - 32px);
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+/* we-develop */
 
 /* home */
 
@@ -729,7 +851,30 @@ footer hr {
     font-size: 14px;
   }
   /* production sample */
-
+  /* we-develop */
+  .we-develop h2{
+    font-size: 25px;
+    line-height: 39px; /
+  }
+  .we-develop .slider-arrows{
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .we-develop .nav{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 26px;
+  }
+  .we-develop .nav .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .we-develop .swiper{
+    margin-bottom: 23px;
+  }
+  /* we-develop */
   /* home */
 
   /* footer */
@@ -924,6 +1069,37 @@ footer hr {
     font-size: 14px;
   }
   /* production sample */
+
+  /* we-develop */
+  .we-develop h2{
+    font-size: 25px;
+    line-height: 39px; /
+  }
+  .we-develop .slider-arrows{
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .we-develop .nav{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 26px;
+  }
+  .we-develop .nav::-webkit-scrollbar{
+    height: 0;
+  }
+  .we-develop .nav .nav-item{
+    flex: 0 0 auto;
+  }
+  .we-develop .nav .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .we-develop .swiper{
+    margin-bottom: 23px;
+  }
+  /* we-develop */
   /* home */
 
   /* footer */
