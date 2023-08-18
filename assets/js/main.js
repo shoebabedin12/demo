@@ -78,17 +78,17 @@ $(document).ready(function () {
           slidesPerGroup: 1,
         },
         769: {
-          slidesPerView: 3,
+          slidesPerView: 3.4,
           slidesPerGroup: 1,
           spaceBetween: 16,
         },
         600: {
-          slidesPerView: 2,
+          slidesPerView: 2.4,
           slidesPerGroup: 1,
           spaceBetween: 16,
         },
         300: {
-          slidesPerView: 1,
+          slidesPerView: 2.4,
           slidesPerGroup: 1,
           spaceBetween: 16,
         },
