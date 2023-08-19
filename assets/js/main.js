@@ -113,6 +113,40 @@ $(document).ready(function () {
         prevEl: ".swiper-button-prev"
       }
     });
+
+     // we-develop
+  var swiper = new Swiper(".brandsSlider", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000, // Set the delay between slides in milliseconds
+      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+    },
+    loop: true, // Set to true for infinite loop
+    speed: 1000, // Adjust the speed value to control the slide transition speed
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    breakpoints: {
+        1024: {
+          slidesPerView: 5,
+          slidesPerGroup: 1,
+        },
+        769: {
+          slidesPerView: 5,
+          slidesPerGroup: 1,
+        },
+        600: {
+          slidesPerView: 4,
+          slidesPerGroup: 1,
+        },
+        300: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+        },
+      },
+  });
   // email sending
   document
     .getElementById("emailForm")

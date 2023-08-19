@@ -843,6 +843,73 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 /* testimonial */
 
+/* brands */
+.brands {
+  padding-bottom: 141px;
+}
+.brands h2 {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 59px;
+}
+
+/* brands */
+
+/* inquiry */
+.inquiry .container-fluid {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 86px 0;
+}
+.inquiry h2 {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 30px;
+}
+.inquiry {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 40px;
+}
+.inquiry a {
+  background: #e74c3c;
+  padding: 15px 19px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.inquiry a:hover {
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  background: transparent;
+}
+.inquiry {
+}
+.inquiry {
+}
+.inquiry {
+}
+.inquiry {
+}
+.inquiry {
+}
+/* inquiry */
+
 /* home */
 
 /* footer */
@@ -1055,7 +1122,12 @@ footer hr {
   /* .who-we-are */
   .who-we-are {
     text-align: center;
-    padding: 75px 0 70px;
+    /* padding: 75px 0 70px; */
+  }
+  .who-we-are .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #eee;
   }
   .who-we-are .col-lg-4 {
     margin-bottom: 40px;
@@ -1072,6 +1144,9 @@ footer hr {
   /* .who-we-are */
 
   /* <!-- our buyer --> */
+  .our-buyer {
+    padding-top: 70px;
+  }
   .our-buyer h2 {
     font-size: 25px;
     line-height: 39px;
@@ -1086,6 +1161,7 @@ footer hr {
   }
   .our-buyer .swiper {
     margin-left: 1rem;
+    margin-bottom: 65px;
   }
   .our-buyer .swiper .swiper-slide .swiper-button-next {
     left: -2.4rem;
@@ -1125,6 +1201,9 @@ footer hr {
   }
   /* production sample */
   /* we-develop */
+  .we-develop {
+    padding: 70px 0;
+  }
   .we-develop h2 {
     font-size: 25px;
     line-height: 39px;
@@ -1162,9 +1241,13 @@ footer hr {
   }
   /* we-develop */
   /* why-us */
+  .why-us {
+    padding-bottom: 70px;
+  }
   .why-us h2 {
     font-size: 25px;
     line-height: 39px;
+    text-align: center;
   }
 
   .why-us .custom-flex {
@@ -1203,6 +1286,9 @@ footer hr {
   }
   /* world */
   /* testimonial */
+  .testimonial {
+    margin: 70px 0 80px;
+  }
   .testimonial h2 {
     font-size: 25px;
     line-height: 39px;
@@ -1236,6 +1322,17 @@ footer hr {
     line-height: normal;
   }
   /* testimonial */
+
+  /* brands */
+  .brands {
+    padding-bottom: 59px;
+  }
+  .brands h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 38px;
+  }
+  /* brands */
   /* home */
 
   /* footer */
@@ -1432,6 +1529,9 @@ footer hr {
   /* production sample */
 
   /* we-develop */
+  .we-develop {
+    padding: 70px 0;
+  }
   .we-develop h2 {
     font-size: 25px;
     line-height: 39px;
@@ -1476,6 +1576,14 @@ footer hr {
   /* we-develop */
 
   /* why-us */
+  .why-us {
+    padding-bottom: 70px;
+  }
+  .why-us h2 {
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+  }
   .why-us .custom-flex {
     flex-direction: column;
   }
@@ -1513,6 +1621,9 @@ footer hr {
   /* world */
 
   /* testimonial */
+  .testimonial {
+    margin: 70px 0 80px;
+  }
   .testimonial h2 {
     font-size: 25px;
     line-height: 39px;
@@ -1546,6 +1657,17 @@ footer hr {
     line-height: normal;
   }
   /* testimonial */
+
+  /* brands */
+  .brands {
+    padding-bottom: 59px;
+  }
+  .brands h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 38px;
+  }
+  /* brands */
   /* home */
 
   /* footer */
