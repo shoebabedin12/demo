@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  
   // hero slider
   var swiper = new Swiper(".mySwiper", {
     // effect: "fade",
@@ -175,4 +176,6 @@ $(document).ready(function () {
           // Handle any errors that occur during the fetch
         });
     });
+
+   
 });
