@@ -1328,7 +1328,8 @@ footer hr {
   /* brands */
   /* inquiry */
   .inquiry .container-fluid {
-    padding: 60px 0;
+    padding-top: 60px ;
+    padding-bottom: 60px ;
   }
   .inquiry h2 {
     font-size: 25px;
@@ -1444,7 +1445,8 @@ footer hr {
   /* .who-we-are */
   .who-we-are .container-fluid {
     text-align: center;
-    padding: 75px 0 70px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
   .who-we-are h3 {
     font-size: 25px;
@@ -1683,7 +1685,8 @@ footer hr {
 
   /* inquiry */
   .inquiry .container-fluid {
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .inquiry h2 {
     font-size: 25px;
