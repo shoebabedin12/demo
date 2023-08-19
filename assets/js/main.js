@@ -94,6 +94,25 @@ $(document).ready(function () {
         },
       },
   });
+
+    // testimonial slider
+    var swiper = new Swiper(".mySwiper4", {
+      // effect: "fade",
+      autoplay: {
+        delay: 3000, // Set the delay between slides in milliseconds
+        disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+      },
+      loop: false, // Set to true for infinite loop
+      speed: 1000, // Adjust the speed value to control the slide transition speed
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction"
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
   // email sending
   document
     .getElementById("emailForm")

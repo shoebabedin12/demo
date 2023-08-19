@@ -640,20 +640,16 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  position: relative;
 }
 
 .world .content {
   z-index: 2;
-  position: relative;
-  left: 50%;
   max-width: 946px;
   padding: 217px 0 207px;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
+  margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 .world h2 {
   background: rgba(255, 255, 255, 0.9);
@@ -667,12 +663,13 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   margin-bottom: 40px;
 }
 .world p {
-  color: #FFF;
-text-align: center;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 29px; /* 181.25% */
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 45px;
 }
 .world a {
   color: #fff;
@@ -681,7 +678,7 @@ line-height: 29px; /* 181.25% */
   font-weight: 500;
   line-height: normal;
   background: #e74c3c;
-  padding: 15px 19px;
+  padding: 15px 27px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -697,23 +694,154 @@ line-height: 29px; /* 181.25% */
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-.world {
+.world .overlay {
+  position: absolute;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
-.world {
-}
-.world {
-}
-.world {
-}
-.world {
-}
-.world {
-}
-.world {
-}
-.world {
-}
+
 /* world */
+
+/* testimonial */
+.testimonial {
+  margin: 165px 0;
+}
+.testimonial h2 {
+  color: #000;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 16px;
+}
+.testimonial p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 60px;
+  max-width: 571px;
+}
+.testimonial .img {
+  max-width: 390px;
+}
+.testimonial .img img {
+  width: 100%;
+}
+.testimonial .swiper h4 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 161.111% */
+}
+.testimonial .swiper p {
+  max-width: 768px;
+  margin-bottom: 47px;
+}
+.testimonial .custom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 18px;
+  margin-bottom: 60px;
+}
+.testimonial .custom-flex .client-img {
+  max-width: 66px;
+  max-height: 66px;
+  border-radius: 50%;
+}
+.testimonial .custom-flex .client-img img {
+  width: 100%;
+  height: 100%;
+}
+.testimonial .custom-flex h4 {
+  color: #e74c3c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+.testimonial .custom-flex p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  margin-bottom: 0;
+}
+.testimonial .swiper-pagination {
+  position: unset;
+  text-align: start;
+  color: #ccc;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  bottom: 0;
+}
+.testimonial hr {
+  opacity: 1;
+  border: 1px solid #ccc;
+  max-width: 215px;
+  width: 100%;
+  margin: 0;
+}
+.testimonial .swiper-pagination .swiper-pagination-current {
+  color: #000;
+}
+.testimonial .slider-arrows {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  max-width: 80px;
+  width: 100%;
+}
+.testimonial .slider-arrows div {
+  max-width: 35px;
+  max-height: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+  padding: 0;
+  margin: 0;
+  position: unset;
+}
+
+.testimonial .slider-arrows div.swiper-button-disabled {
+  border: 2px solid #a1a1a1;
+}
+.testimonial .slider-arrows div.swiper-button-disabled svg path {
+  fill: #a1a1a1;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+/* testimonial */
 
 /* home */
 
@@ -1054,6 +1182,60 @@ footer hr {
     line-height: 29px;
   }
   /* why-us */
+
+  /* world */
+  .world .content {
+    padding: 90px 0;
+  }
+  .world h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+  .world p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+  .world a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  /* world */
+  /* testimonial */
+  .testimonial h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .testimonial p {
+    display: none;
+  }
+  .testimonial .img {
+    margin-bottom: 28px;
+  }
+  .testimonial .swiper h4 {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .testimonial .swiper p {
+    display: block;
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .testimonial .custom-flex h4 {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
+  .testimonial .custom-flex p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .testimonial .swiper-pagination {
+    font-size: 18px;
+    line-height: normal;
+  }
+  /* testimonial */
   /* home */
 
   /* footer */
@@ -1309,6 +1491,61 @@ footer hr {
     line-height: 29px;
   }
   /* why-us */
+
+  /* world */
+  .world .content {
+    padding: 90px 0;
+  }
+  .world h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+  .world p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 23px;
+  }
+  .world a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  /* world */
+
+  /* testimonial */
+  .testimonial h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .testimonial p {
+    display: none;
+  }
+  .testimonial .img {
+    margin-bottom: 28px;
+  }
+  .testimonial .swiper h4 {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .testimonial .swiper p {
+    display: block;
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .testimonial .custom-flex h4 {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
+  .testimonial .custom-flex p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .testimonial .swiper-pagination {
+    font-size: 18px;
+    line-height: normal;
+  }
+  /* testimonial */
   /* home */
 
   /* footer */
@@ -1360,6 +1597,12 @@ footer hr {
     font-size: 13px;
   }
   /* we-develop */
+  /* world */
+  .world h2 {
+    font-size: 22px;
+  }
+  /* world */
+
   /* home */
 
   /* footer */
