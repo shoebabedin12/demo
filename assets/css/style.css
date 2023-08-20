@@ -864,6 +864,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* brands */
 
 /* inquiry */
+.inquiry {
+  margin-bottom: 165px;
+}
 .inquiry .container-fluid {
   background: #f7f7f7;
   text-align: center;
@@ -913,6 +916,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* common-bg */
 .common-bg {
   overflow: hidden;
+  max-height: 700px;
+  height: 100%;
 }
 /* common-bg */
 /* multi-step-form */
@@ -1438,6 +1443,54 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 /* inquery form */
 
+/* blog page */
+.blog-section {
+  /* position: relative;
+  top: -30rem; */
+  margin-top: -30rem;
+}
+.blog-section h2 {
+  color: #000;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 16px;
+}
+.blog-section p {
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 702px;
+  margin-bottom: 60px;
+}
+.blog-section .custom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.blog-section .custom-flex .content h4 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 161.111% */
+}
+.blog-section .custom-flex .content p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 0;
+}
+
+/* blog page */
+
 /* footer */
 footer {
   background-color: var(--color1);
@@ -1867,6 +1920,9 @@ footer hr {
   }
   /* brands */
   /* inquiry */
+  .inquiry {
+    margin-bottom: 60px;
+  }
   .inquiry .container-fluid {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1918,6 +1974,22 @@ footer hr {
     max-height: 300px;
   }
   /* contact-form */
+  /* blog-section */
+  .blog-section {
+    top: -14rem;
+  }
+  .blog-section h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .blog-section p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .blog-section .col-lg-6:nth-child(odd) .custom-flex {
+    flex-direction: row-reverse;
+  }
+  /* blog-section */
 
   /* footer */
   footer h4 {
@@ -2255,6 +2327,9 @@ footer hr {
   /* brands */
 
   /* inquiry */
+  .inquiry {
+    margin-bottom: 60px;
+  }
   .inquiry .container-fluid {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2319,6 +2394,24 @@ footer hr {
   }
   /* contact-form */
 
+  /* blog-section */
+  .blog-section {
+    top: -7rem;
+  }
+  .blog-section h2 {
+    font-size: 24px;
+    line-height: 12px;
+  }
+  .blog-section p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .blog-section .col-lg-6:nth-child(odd) .custom-flex {
+    flex-direction: row-reverse;
+  }
+
+  /* blog-section */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -2375,7 +2468,18 @@ footer hr {
   /* world */
 
   /* home */
-
+  /* blog-section */
+  .blog-section .col-lg-6 .custom-flex {
+    flex-direction: column !important;
+  }
+  .blog-section .col-lg-6 .custom-flex div {
+    width: 100%;
+  }
+  .blog-section .col-lg-6 .custom-flex .img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  /* blog-section */
   /* footer */
   footer {
     padding-top: 35px;
