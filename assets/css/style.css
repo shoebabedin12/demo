@@ -366,7 +366,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 .our-buyer .swiper .swiper-slide .swiper-button-next {
   top: 50%;
-  left: -3.5rem;
+  left: -70px;
   right: auto;
   max-width: 100px;
   max-height: 100px;
@@ -378,11 +378,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: translate(0rem, -50%);
-  -webkit-transform: translate(0rem, -50%);
-  -moz-transform: translate(0rem, -50%);
-  -ms-transform: translate(0rem, -50%);
-  -o-transform: translate(0rem, -50%);
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
   padding: 0;
   margin: 0;
 }
@@ -1102,6 +1102,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 125px;
 }
 .contact-form h2 {
   color: #000;
@@ -1122,6 +1124,118 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .contact-form form {
   max-width: 702px;
 }
+.contact-form .contact-form {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact-form .form-control {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-form .form-control::placeholder {
+  color: #aaa;
+}
+.contact-form .btn {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.contact-info {
+  margin-top: 165px;
+  margin-bottom: 165px;
+}
+.contact-info .img img {
+  width: 100%;
+}
+.contact-info .icon {
+  margin-bottom: 15px;
+}
+.contact-info h4 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 161.111% */
+  margin-bottom: 6px;
+}
+.contact-info p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 286px;
+  margin-bottom: 53px;
+}
+.contact-info .box-contact {
+  border: 1px solid #e74c3c;
+  background: #fff;
+  padding: 43px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contact-info .box-contact span h3 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 145% */
+  margin-bottom: 8px;
+}
+.contact-info .box-contact span p {
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 0;
+  max-width: 100%;
+}
+.contact-info .box-contact a {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 11px 21px;
+}
+.contact-info .box-contact.bg {
+  background: #e74c3c;
+}
+.contact-info .box-contact.bg span h3 {
+  color: #fff;
+}
+.contact-info .box-contact.bg span p {
+  color: #fff;
+}
+.contact-info .box-contact.bg a {
+  background: #fff;
+  color: var(--color);
+}
+
 .drop-zone {
   max-width: 702px;
   height: 75px;
@@ -1171,19 +1285,158 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   text-align: center;
 }
 
-.contact-form {
-}
-.contact-form {
-}
-.contact-form {
-}
-.contact-form {
-}
-.contact-form {
-}
-.contact-form {
-}
 /* contact */
+
+/* inquery form */
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+.multi-step-form {
+}
+#multistepsform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#multistepsform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+#multistepsform fieldset:not(:first-of-type) {
+  display: none;
+}
+#multistepsform input,
+#multistepsform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2c3e50;
+  font-size: 13px;
+}
+#multistepsform input:focus,
+#multistepsform textarea:focus {
+  border-color: #679b9b;
+  outline: none;
+  color: #637373;
+}
+#multistepsform .action-button {
+  width: 100px;
+  background: #ff9a76;
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#multistepsform .action-button:hover,
+#multistepsform .action-button:focus {
+  box-shadow: 0 0 0 2px #f08a5d, 0 0 0 3px #ff976;
+  color: #fff;
+}
+#multistepsform .fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+#multistepsform .fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+#multistepsform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+#multistepsform #progressbar li {
+  list-style-type: none;
+  color: #679b9b;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+#multistepsform #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  background: #679b9b;
+  border-radius: 3px;
+  margin: 0 auto 5px auto;
+}
+#multistepsform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #679b9b;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+#multistepsform #progressbar li:first-child:after {
+  content: none;
+}
+#multistepsform #progressbar li.active {
+  color: #ff9a76;
+}
+#multistepsform #progressbar li.active:before,
+#multistepsform #progressbar li.active:after {
+  background: #ff9a76;
+  color: white;
+}
+/* inquery form */
 
 /* footer */
 footer {
@@ -1327,6 +1580,13 @@ footer hr {
     text-align: center;
   }
   /* who-we-are */
+  /* our-buyer */
+  .our-buyer .swiper .swiper-slide .swiper-button-next {
+    left: -3.4rem;
+    max-width: 80px;
+    max-height: 80px;
+  }
+  /* our-buyer */
 }
 @media (min-width: 769px) and (max-width: 991px) {
   /* header */
@@ -1627,6 +1887,37 @@ footer hr {
   }
   /* inquiry */
   /* home */
+  /* contact-form */
+  .contact-info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact-form {
+    background-position: right;
+  }
+  .contact-form h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contact-form p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .contact-form form {
+    margin: 0 auto;
+  }
+  .drop-zone {
+    font-size: 15px;
+  }
+  .contact-info .img {
+    margin-bottom: 30px;
+  }
+  .contact-info .img img {
+    max-height: 300px;
+  }
+  /* contact-form */
 
   /* footer */
   footer h4 {
@@ -1984,6 +2275,49 @@ footer hr {
   }
   /* inquiry */
   /* home */
+
+  /* contact-form */
+  .contact-info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .contact-form {
+    background-position: right;
+  }
+  .contact-form h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contact-form p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .contact-form form {
+    margin: 0 auto;
+  }
+  .contact-info .img {
+    margin-bottom: 30px;
+  }
+  .contact-info .img img {
+    max-height: 300px;
+  }
+  .drop-zone {
+    font-size: 15px;
+  }
+  .contact-info .box-contact {
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-info .box-contact span h3 {
+    text-align: center;
+  }
+  .contact-info .box-contact span p {
+    text-align: center;
+  }
+  /* contact-form */
 
   /* footer */
   footer h4 {

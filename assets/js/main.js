@@ -37,6 +37,7 @@ $(document).ready(function () {
         1024: {
           slidesPerView: 4.4,
           slidesPerGroup: 1,
+          spaceBetween: 30,
         },
         769: {
           slidesPerView: 3.4,
