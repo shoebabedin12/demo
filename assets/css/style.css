@@ -2289,7 +2289,7 @@ footer hr {
   /* contact-form */
   /* blog-section */
   .blog-section {
-    top: -14rem;
+    margin-top: -14rem;
   }
   .blog-section h2 {
     font-size: 28px;
@@ -2709,7 +2709,7 @@ footer hr {
 
   /* blog-section */
   .blog-section {
-    top: -7rem;
+    margin-top: -7rem;
   }
   .blog-section h2 {
     font-size: 24px;
