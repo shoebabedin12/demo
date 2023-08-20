@@ -1652,6 +1652,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   max-height: 433px;
   height: 100%;
   position: relative;
+  margin-bottom: 27px;
 }
 .collection-part .img img {
   width: 100%;
@@ -1726,9 +1727,51 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   box-shadow: none;
   outline: none;
 }
-.collection-part .img {
+.collection-part .description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.collection-part .img {
+.collection-part .description .style {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.collection-part .description .qtty {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.collection-part nav .pagination {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.collection-part nav .pagination .page-link {
+  background-color: transparent;
+  border: 1px solid transparent;
+  width: 32px;
+  height: 35px;
+  color: #999;
+
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.collection-part nav .pagination .page-item.active .page-link {
+  border: 1px solid var(--color);
+  color: #e74c3c;
 }
 .collection-part {
 }
