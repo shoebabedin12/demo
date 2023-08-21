@@ -1,0 +1,610 @@
+/* shipping process Modal */
+.multi_step_form .form-custom-container {
+  max-width: 590px;
+  margin: 0 auto;
+}
+.multi_step_form h1 {
+  text-align: center;
+}
+
+.multi_step_form input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.checkout_process_modal input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.multi_step_form .tab {
+  display: none;
+}
+
+.multi_step_form button {
+  /* background-color: #04aa6d; */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+.multi_step_form button:hover {
+  opacity: 0.8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.multi_step_form .step_status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 182px;
+  margin-bottom: 64px;
+  position: relative;
+}
+.multi_step_form .step_status::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border: 1px dashed red;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 1;
+}
+
+.multi_step_form .step_status .step .box p {
+  color: #e74c3c;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 0px;
+  width: 49px;
+  height: 49px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.multi_step_form .step.active .box p,
+.multi_step_form .step.finish .box p {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* Mark the steps that are finished and valid: */
+
+.checkout_process_modal .shipping_address .shipping_address_item {
+  background-color: var(--Background-Color);
+  box-shadow: 0px 0px 2px rgba(145, 158, 171, 0.2),
+    0px 12px 24px -4px rgba(145, 158, 171, 0.12);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.checkout_process_modal .shipping_address .shipping_address_item .address_name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  position: relative;
+  margin-bottom: 24px;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .address_name
+  input {
+  width: auto;
+}
+/* .checkout_process_modal
+    .shipping_address
+    .shipping_address_item
+    .address_name
+    input[type="radio"] {
+    display: none;
+  }
+  .checkout_process_modal
+    .shipping_address
+    .shipping_address_item
+    .address_name
+    label:before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin: 0 5px 0 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 11px;
+    border: 2px solid var(--Primary);
+    background-color: transparent;
+  }
+  .checkout_process_modal
+    .shipping_address
+    .shipping_address_item
+    .address_name
+    input[type="radio"]:checked
+    + label:after {
+    border-radius: 11px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    content: " ";
+    display: block;
+    background: var(--Primary);
+  } */
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+.form-check-input[type="radio"] {
+  background-color: #fff !important;
+  border-color: var(--Primary) !important;
+}
+.form-check-input:checked[type="radio"] {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACkSURBVHgBhZBBCsIwEEXzZxAFN81GXOoJ9AjBC1g8ST2JnqT0BMUj9AbFleAqOwVxYrKIhKLNXw38N8yfD5WoL00xZ96LiJ0Cna7ba/QQh/vBnARUpYvk1HlRt8cv+AsawriVZgWmXo3o8RZNE2CjMgq56QXoHEgCSzORJgcypCPdXGwI/JfyXqgpqWfnP1fVEFqm9USFBoh5K84VTx9p7a9F7wPb1j6YLXOjpwAAAABJRU5ErkJggg==) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+.form-check-input:checked {
+  background-color: #fff !important;
+  border-color: var(--Primary) !important;
+}
+.checkout_process_modal .shipping_address .shipping_address_item label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--Text);
+}
+.checkout_process_modal .shipping_address .shipping_address_item .default {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1a7885;
+  background: #ebf0f1;
+  border-radius: 100px;
+  padding: 2px 4px;
+}
+.checkout_process_modal .shipping_address .shipping_address_item .address_info {
+  margin-bottom: 24px;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .address_info
+  .user_name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #212b36;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .address_info
+  .address {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #212b36;
+  margin-bottom: 0px;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .address_info
+  span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #637381;
+}
+.checkout_process_modal .shipping_address .shipping_address_item .cta_btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .cta_btn
+  button {
+  padding: 6px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .cta_btn
+  button.cta-remove {
+  border: 1px solid #e85342;
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--Primary);
+}
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .cta_btn
+  button.cta-edit {
+  background: #016a78;
+}
+.checkout_process_modal .edit_shipping_address label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.checkout_process_modal .edit_shipping_address input {
+  border: 1px solid #a3a3a5;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a3a3a5;
+}
+.checkout_process_modal .edit_shipping_address input:focus {
+  box-shadow: none;
+}
+.checkout_process_modal .edit_shipping_address input:focus-visible {
+  outline: none;
+}
+
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .shipping_estimate_delivery_time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .shipping_estimate_delivery_time
+  h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--Text);
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .shipping_estimate_delivery_time
+  p {
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--search-text);
+}
+.checkout_process_modal .shipping_estimate_delivery {
+  margin-bottom: 24px;
+}
+.checkout_process_modal .shipping_estimate_delivery .address_name .container {
+  position: relative;
+  padding-left: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #77787c;
+  cursor: pointer;
+}
+
+.checkout_process_modal .shipping_estimate_delivery .address_name input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkout_process_modal .shipping_estimate_delivery .address_name .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  background-color: transparent;
+  border: 1px solid var(--Primary);
+}
+
+/* On mouse-over, add a grey background color */
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name:hover
+  input
+  ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  input:checked
+  ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  input:checked
+  ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 7px;
+  height: 13px;
+  border: solid var(--Primary);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  .custom-date {
+  max-width: 380px;
+  border: 1px solid #a3a3a5;
+  border-radius: 8px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  .custom-date
+  .custom-date-picker {
+  width: 100%;
+  opacity: 1;
+  position: unset;
+  padding: 12px 16px;
+  height: auto;
+  border: 0px;
+  appearance: none;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  .custom-date-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  .custom-date-picker:focus-visible {
+  outline: 0px;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  [type="date"] {
+  background: #fff url("./../images/date.png") 97% 50% no-repeat;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  [type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  [type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.checkout_process_modal
+  .shipping_estimate_delivery
+  .address_name
+  .date
+  input#dateofbirth {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 13px 16px;
+}
+.checkout_process_modal .delivery_method .heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.checkout_process_modal .delivery_method .address_name {
+  margin-bottom: 9px !important;
+}
+.checkout_process_modal .delivery_method .address_name label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #222329;
+}
+.checkout_process_modal .delivery_method .address_info .address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #77787c;
+  padding-left: 3%;
+}
+
+.checkout_process_modal
+  .shipping_address
+  .shipping_address_item
+  .address_name.payment {
+  justify-content: space-between !important;
+}
+.checkout_process_modal .shipping_address_item.payment_part .payment span {
+  display: inline-block;
+}
+.checkout_process_modal
+  .shipping_address_item.payment_part
+  .cart-item-add-more
+  a {
+  justify-content: flex-start;
+}
+
+/*The background card*/
+.card {
+  z-index: 0;
+  border: none;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+  font-size: 25px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #000000;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 12px;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+/*ProgressBar before any progress*/
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 18px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: skyblue;
+}
+
+/*Imaged Radio Buttons*/
+.radio-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.radio {
+  display: inline-block;
+  width: 204;
+  height: 104;
+  border-radius: 0;
+  background: lightblue;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 8px 2px;
+}
+
+.radio:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.radio.selected {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*Fit image in bootstrap div*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+/* shipping process Modal */

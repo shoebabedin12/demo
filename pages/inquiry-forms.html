@@ -11,6 +11,12 @@
     />
     <!-- bootstrap 5.2.3 -->
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- multi-step-form style -->
+    <link rel="stylesheet" href="./../assets/css/multi-step-form.css" />
     <!-- style -->
     <link rel="stylesheet" href="./../assets/css/style.css" />
   </head>
@@ -72,7 +78,7 @@
       <!-- header -->
 
       <!-- common-bg -->
-      <section class="common-bg">
+      <!-- <section class="common-bg">
         <div class="row">
           <div class="col-12">
             <img
@@ -82,88 +88,126 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- common-bg -->
 
       <!-- multi-step-form -->
-      <section class="multi-step-form">
-        <div class="container">
+      <div class="multi_step_form">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-              <!-- multistep form -->
-              <form id="multistepsform">
-                <!-- progressbar -->
-                <ul id="progressbar">
-                  <li class="active">Account Setup</li>
-                  <li>Personal Details</li>
-                  <li>Social Profiles</li>
-                </ul>
-                <!-- fieldsets -->
-                <fieldset>
-                  <h2 class="fs-title">Create your account</h2>
-                  <h3 class="fs-subtitle"></h3>
-                  <input type="text" name="email" placeholder="Email" />
-                  <input type="password" name="pass" placeholder="Password" />
-                  <input
-                    type="password"
-                    name="cpass"
-                    placeholder="Confirm Password"
-                  />
-                  <input
-                    type="button"
-                    name="next"
-                    class="next action-button"
-                    value="Next"
-                  />
-                </fieldset>
-
-                <fieldset>
-                  <h2 class="fs-title">Personal Details</h2>
-                  <h3 class="fs-subtitle">We will never sell it</h3>
-                  <input type="text" name="fname" placeholder="First Name" />
-                  <input type="text" name="lname" placeholder="Last Name" />
-                  <input type="text" name="phone" placeholder="Phone" />
-                  <textarea name="address" placeholder="Address"></textarea>
-                  <input
-                    type="button"
-                    name="previous"
-                    class="previous action-button"
-                    value="Previous"
-                  />
-
-                  <input
-                    type="button"
-                    name="next"
-                    class="next action-button"
-                    value="Next"
-                  />
-                </fieldset>
-                <fieldset>
-                  <h2 class="fs-title">Social Profiles</h2>
-                  <h3 class="fs-subtitle">
-                    Your presence on the social network
-                  </h3>
-                  <input type="text" name="twitter" placeholder="Twitter" />
-                  <input type="text" name="facebook" placeholder="Facebook" />
-                  <input type="text" name="gplus" placeholder="Google Plus" />
-                  <input
-                    type="button"
-                    name="previous"
-                    class="previous action-button"
-                    value="Previous"
-                  />
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="submit action-button"
-                    value="Submit"
-                  />
-                </fieldset>
+            <div class="col-12 text-center">
+              <h2>Are you ready to take your ideas to the next level?</h2>
+              <p>
+                Tell us about your project and get connected with a TAA Expert
+                today!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-12">
+            <div class="form-custom-container">
+              <div class="step_status">
+                <span class="step">
+                  <div class="box">
+                    <p>1</p>
+                  </div>
+                </span>
+                <span class="step">
+                  <div class="box">
+                    <p>2</p>
+                  </div>
+                </span>
+                <span class="step">
+                  <div class="box">
+                    <p>3</p>
+                  </div>
+                </span>
+              </div>
+              <form id="regForm" action="#">
+                <div class="tab">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="">
+                        <div class="question">What type of brand are you?</div>
+                        <div class="options">
+                          <div class="option" onclick="selectOption(this)">
+                            Start-up
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this)">
+                            Established
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        id="prevBtn1"
+                        onclick="nextPrev(-1, 'prevBtn1')"
+                      >
+                        Previous
+                      </button>
+                      <button
+                        class="shipping"
+                        type="button"
+                        id="nextBtn1"
+                        onclick="nextPrev(1, 'nextBtn1')"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="">two</div>
+                      <button
+                        type="button"
+                        id="prevBtn1"
+                        onclick="nextPrev(-1, 'prevBtn1')"
+                      >
+                        Previous
+                      </button>
+                      <button
+                        class="shipping"
+                        type="button"
+                        id="nextBtn1"
+                        onclick="nextPrev(1, 'nextBtn1')"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div>three</div>
+                      <button
+                        type="button"
+                        id="prevBtn1"
+                        onclick="nextPrev(-1, 'prevBtn1')"
+                      >
+                        Previous
+                      </button>
+                      <button
+                        class="shipping"
+                        type="submit"
+                        id="nextBtn1"
+                        onclick="nextPrev(1, 'nextBtn1')"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- multi-step-form -->
 
       <!-- footer -->
@@ -367,81 +411,19 @@
     <!-- main js -->
     <script src="./../assets/js/main.js"></script>
 
-    <!-- internal js -->
     <script>
-      var current_fs, next_fs, previous_fs;
-      var left, opacity, scale;
-      var animating;
-      $(".next").click(function () {
-        if (animating) return false;
-        animating = true;
+      function selectOption(option) {
+        // Remove 'active' class from all options
+        const options = document.querySelectorAll(".option");
+        options.forEach((opt) => {
+          opt.classList.remove("active");
+          opt.querySelector(".fa-check").style.display = "none";
+        });
 
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
-        $("#progressbar li")
-          .eq($("fieldset").index(next_fs))
-          .addClass("active");
-        next_fs.show();
-        current_fs.animate(
-          { opacity: 0 },
-          {
-            step: function (now, mx) {
-              scale = 1 - (1 - now) * 0.2;
-              left = now * 50 + "%";
-              opacity = 1 - now;
-              current_fs.css({
-                transform: "scale(" + scale + ")",
-                position: "absolute"
-              });
-              next_fs.css({ left: left, opacity: opacity });
-            },
-            duration: 800,
-            complete: function () {
-              current_fs.hide();
-              animating = false;
-            },
-            easing: "easeInOutBack"
-          }
-        );
-      });
-
-      $(".previous").click(function () {
-        if (animating) return false;
-        animating = true;
-
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
-        $("#progressbar li")
-          .eq($("fieldset").index(current_fs))
-          .removeClass("active");
-
-        previous_fs.show();
-        current_fs.animate(
-          { opacity: 0 },
-          {
-            step: function (now, mx) {
-              scale = 0.8 + (1 - now) * 0.2;
-              left = (1 - now) * 50 + "%";
-              opacity = 1 - now;
-              current_fs.css({ left: left });
-              previous_fs.css({
-                transform: "scale(" + scale + ")",
-                opacity: opacity
-              });
-            },
-            duration: 800,
-            complete: function () {
-              current_fs.hide();
-              animating = false;
-            },
-            easing: "easeInOutBack"
-          }
-        );
-      });
-
-      $(".submit").click(function () {
-        return false;
-      });
+        // Add 'active' class and display checkmark for the selected option
+        option.classList.add("active");
+        option.querySelector(".fa-check").style.display = "inline-block";
+      }
     </script>
   </body>
 </html>
