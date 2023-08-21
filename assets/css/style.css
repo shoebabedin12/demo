@@ -1956,7 +1956,154 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 
 /* we serve */
 
-/*  */
+/* what we do it */
+.whatWeDoIt {
+  background: url("./../images/common-bg.png");
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12rem;
+}
+.whatWeDoIt .title {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 30px;
+}
+.whatWeDoIt .desc {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 984px;
+  margin: 0 auto 45px;
+}
+
+.stepGarment {
+  margin: 130px 0;
+}
+.stepGarment h2 {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 16px;
+}
+.stepGarment p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 668px;
+  margin: 0 auto 60px;
+}
+.team {
+  margin-bottom: 165px;
+}
+.team h2 {
+  color: #000;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  max-width: 505px;
+  margin-bottom: 30px;
+}
+.team p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 786px;
+}
+.team .img img {
+  width: 100%;
+}
+.logistic {
+  margin-bottom: 165px;
+}
+.logistic h2 {
+  color: #000;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 30px;
+}
+.logistic p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+}
+.logistic .img img {
+  width: 100%;
+}
+.nextPage {
+  margin-bottom: 181px;
+}
+.nextPage span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
+}
+.nextPage span a {
+  color: #ddd;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+}
+.nextPage span p {
+  color: #000;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 0;
+}
+
+.nextPage .btn {
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  text-align: end;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: var(--color);
+  padding: 19px 52px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.nextPage {
+}
+.nextPage {
+}
+.nextPage {
+}
+.nextPage {
+}
+.nextPage {
+}
+.nextPage {
+}
+/* what we do it */
 
 /* footer */
 footer {
@@ -2542,6 +2689,63 @@ footer hr {
     margin-bottom: 65px;
   }
   /* who we are */
+  /* what We Do It */
+  .whatWeDoIt {
+    padding-top: 6rem;
+    margin-bottom: 66px;
+  }
+  .whatWeDoIt .title {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .whatWeDoIt .desc {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .stepGarment h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .stepGarment p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .team {
+    margin-bottom: 65px;
+  }
+  .team h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .team p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .logistic {
+    margin-bottom: 65px;
+  }
+  .logistic h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .logistic p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .nextPage span a {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .nextPage span p {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .nextPage .btn {
+    font-size: 14px;
+    line-height: normal;
+    padding: 15px 52px;
+  }
+  /* what We Do It */
 
   /* footer */
   footer h4 {
@@ -3087,6 +3291,68 @@ footer hr {
   }
   /* who we are */
 
+  /* what We Do It */
+  .whatWeDoIt {
+    padding-top: 6rem;
+    margin-bottom: 66px;
+  }
+  .whatWeDoIt .title {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .whatWeDoIt .desc {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .stepGarment h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .stepGarment p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .team {
+    margin-bottom: 65px;
+  }
+  .team h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .team p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .logistic {
+    margin-bottom: 65px;
+  }
+
+  .logistic h2 {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .logistic p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .nextPage {
+    margin-bottom: 60px;
+  }
+  .nextPage span a {
+    font-size: 20px;
+    line-height: 39px;
+  }
+  .nextPage span p {
+    font-size: 20px;
+    line-height: 39px;
+  }
+  .nextPage .btn {
+    font-size: 14px;
+    line-height: normal;
+    padding: 15px 52px;
+  }
+  /* what We Do It */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -3155,6 +3421,28 @@ footer hr {
     object-fit: cover;
   }
   /* blog-section */
+  /* what We Do It */
+  .whatWeDoIt {
+    padding-top: 6rem;
+    margin-bottom: 0px;
+  }
+  .nextPage span {
+    gap: 10px;
+  }
+  .nextPage span a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .nextPage span p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .nextPage .btn {
+    font-size: 14px;
+    line-height: normal;
+    padding: 15px 10px;
+  }
+  /* what We Do It */
 
   /* footer */
   footer {
