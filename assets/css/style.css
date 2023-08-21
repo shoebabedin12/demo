@@ -1445,7 +1445,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 
 /* blog page */
 .blog-section {
-  margin-top: -30rem;
+  background: url("./../images/common-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12rem;
 }
 .blog-section h2 {
   color: #000;
@@ -1492,8 +1496,12 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* collection page */
 /* collection-hero */
 .collection-hero {
-  margin-top: -30rem;
+  background: url("./../images/common-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 166px;
+  padding-top: 12rem;
 }
 .collection-hero .title {
   color: #000;
@@ -1648,12 +1656,13 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 
 .collection-part .img {
   max-height: 433px;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
   margin-bottom: 27px;
 }
 .collection-part .img img {
   width: 100%;
+  max-height: 433px;
   height: 100%;
 }
 .collection-part .img .price {
@@ -1729,6 +1738,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 70px;
 }
 .collection-part .description .style {
   color: #000;
@@ -1736,6 +1746,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 0;
+  /* margin-bottom: 70px; */
 }
 .collection-part .description .qtty {
   color: #666;
@@ -1743,6 +1755,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 0;
+  /* margin-bottom: 70px; */
 }
 .collection-part nav .pagination {
   align-items: center;
@@ -1951,9 +1965,14 @@ footer hr {
     max-height: 80px;
   }
   /* our-buyer */
+  /* blog-section */
+  .blog-section {
+    /* margin-top: -14rem; */
+  }
+  /* blog-section */
   /* collection-hero */
   .collection-hero {
-    margin-top: -14rem;
+    /* margin-top: -14rem; */
   }
   /* collection-hero */
 }
@@ -2292,7 +2311,7 @@ footer hr {
   /* contact-form */
   /* blog-section */
   .blog-section {
-    margin-top: -14rem;
+    /* margin-top: -14rem; */
   }
   .blog-section h2 {
     font-size: 28px;
@@ -2309,7 +2328,7 @@ footer hr {
 
   /* .collection-hero */
   .collection-hero {
-    margin-top: -14rem;
+    /* margin-top: -14rem; */
   }
   .collection-hero .title {
     font-size: 25px;
@@ -2743,7 +2762,7 @@ footer hr {
 
   /* blog-section */
   .blog-section {
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
   }
   .blog-section h2 {
     font-size: 24px;
