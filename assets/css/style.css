@@ -1656,7 +1656,6 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 
 .collection-part .img {
   max-height: 433px;
-  /* height: 100%; */
   position: relative;
   margin-bottom: 27px;
 }
@@ -1799,36 +1798,165 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .hidden {
   display: none;
 }
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
-.collection-part {
-}
 /* collection-part */
 /* collection page */
+
+/* who we are */
+.whoWeAre {
+  background: url("./../images/common-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 166px;
+  padding-top: 12rem;
+}
+.whoWeAre .title {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 30px;
+}
+.whoWeAre .desc {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 984px;
+  margin: 0 auto 45px;
+}
+.whoWeAre a {
+  background: #e74c3c;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 15px 26px;
+  margin-bottom: 61px;
+  display: inline-block;
+}
+.whoWeAre .custom-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+.whoWeAre .custom-flex > div {
+  flex: 1 1 auto;
+}
+.whoWeAre .custom-flex .logo {
+  max-width: 92px;
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(231, 76, 60, 0.1);
+}
+.whoWeAre .content p {
+  max-width: 300px;
+}
+/* who we are */
+
+/* mission vission */
+.mission-vission {
+  margin-bottom: 165px;
+}
+.mission-vission h4 {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 96.667% */
+}
+.mission-vission p {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  max-width: 668px;
+  margin-bottom: 68px;
+}
+.mission-vission .img img {
+  width: 100%;
+}
+
+/* mission vission */
+
+/* we serve */
+.weServe {
+  margin-bottom: 165px;
+}
+.weServe h2 {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  margin-bottom: 16px;
+}
+.weServe p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 60px;
+}
+.weServe .box {
+  border: 1px solid #e74c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: 382px;
+  min-height: 382px;
+  height: 100%;
+}
+.weServe .box.bg {
+  background: #e74c3c;
+}
+.weServe .box h4 {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px; /* 145% */
+  margin-bottom: 27px;
+}
+.weServe .box p {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 0;
+  max-width: 258px;
+  margin: 0 auto;
+}
+.weServe .box.bg h4 {
+  color: #fff;
+}
+.weServe .box.bg p {
+  color: #fff;
+}
+
+/* we serve */
+
+/*  */
 
 /* footer */
 footer {
@@ -2388,6 +2516,33 @@ footer hr {
   }
   /* collection-part */
 
+  /* who we are */
+  .whoWeAre {
+    padding-top: 6rem;
+    margin-bottom: 66px;
+  }
+  .whoWeAre .custom-flex {
+    flex-direction: column;
+  }
+  .whoWeAre .custom-flex .content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .mission-vission {
+    margin-bottom: 65px;
+  }
+  .mission-vission h4 {
+    text-align: center;
+  }
+  .mission-vission p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .weServe {
+    margin-bottom: 65px;
+  }
+  /* who we are */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -2867,6 +3022,71 @@ footer hr {
   }
   /* collection-part */
 
+  /* who we are */
+  .whoWeAre {
+    padding-top: 6rem;
+    margin-bottom: 66px;
+  }
+  .whoWeAre .title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .whoWeAre .desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .whoWeAre a {
+    font-size: 14px;
+  }
+  .whoWeAre .custom-flex {
+    flex-direction: column;
+  }
+  .whoWeAre .custom-flex .content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .whoWeAre .custom-flex .content h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .whoWeAre .custom-flex .content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .mission-vission {
+    margin-bottom: 65px;
+  }
+  .mission-vission h4 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .mission-vission p {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .mission-vission .img img {
+    max-height: 500px;
+  }
+  .weServe {
+    margin-bottom: 65px;
+  }
+  .weServe h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .weServe p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .weServe .box {
+    min-height: 282px;
+  }
+  /* who we are */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -2935,6 +3155,7 @@ footer hr {
     object-fit: cover;
   }
   /* blog-section */
+
   /* footer */
   footer {
     padding-top: 35px;
