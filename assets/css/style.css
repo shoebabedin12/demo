@@ -2383,6 +2383,9 @@ footer hr {
     margin-top: 11px;
     margin-bottom: 40px;
   }
+  .collection-part nav .pagination {
+    justify-content: center;
+  }
   /* collection-part */
 
   /* footer */
@@ -2858,6 +2861,9 @@ footer hr {
     line-height: 29px;
     margin-top: 11px;
     margin-bottom: 40px;
+  }
+  .collection-part nav .pagination {
+    justify-content: center;
   }
   /* collection-part */
 
