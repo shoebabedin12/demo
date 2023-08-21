@@ -1141,6 +1141,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   margin-bottom: 24px;
   border: 0;
   box-shadow: none;
+  border-radius: 0;
 }
 
 .contact-form .iti{
