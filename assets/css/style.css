@@ -1107,7 +1107,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 125px;
   padding-bottom: 125px;
 }
 .contact-form h2 {
@@ -1136,12 +1136,22 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-weight: 700;
   line-height: normal;
 }
+.contact-form .form-label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 18px;
+}
 .contact-form .form-control {
   color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 16px 20px;
+  margin-bottom: 24px;
 }
 .contact-form .form-control::placeholder {
   color: #aaa;
@@ -1164,8 +1174,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   -o-border-radius: 0;
 }
 .contact-info {
-  margin-top: 165px;
-  margin-bottom: 165px;
+  margin-top: 147px;
+  margin-bottom: 176px;
 }
 .contact-info .img img {
   width: 100%;
@@ -1193,7 +1203,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .contact-info .box-contact {
   border: 1px solid #e74c3c;
   background: #fff;
-  padding: 43px 35px;
+  padding: 42px 34px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1255,6 +1265,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   border: 1px dashed #ccc;
   background: #fff;
   border-radius: 10px;
+  margin-bottom: 27px;
 }
 
 .drop-zone--over {
@@ -1293,40 +1304,6 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* contact */
 
 /* inquery form */
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
 #multistepsform {
   width: 400px;
   margin: 50px auto;
