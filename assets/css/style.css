@@ -1637,6 +1637,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   width: 100%;
   max-height: 433px;
   height: 100%;
+  object-fit: cover;
 }
 .collection-part .img .price {
   position: absolute;
