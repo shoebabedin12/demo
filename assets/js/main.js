@@ -19,19 +19,75 @@ $(document).ready(function () {
     // effect: "fade",
     autoplay: {
       delay: 3000, // Set the delay between slides in milliseconds
-      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+      disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
     },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction"
+      type: "fraction",
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  var telInput = $("#phone"),
+    errorMsg = $("#error-msg"),
+    validMsg = $("#valid-msg");
+
+  // initialise plugin
+  telInput.intlTelInput({
+    allowExtensions: true,
+    formatOnDisplay: true,
+    autoFormat: true,
+    autoHideDialCode: true,
+    autoPlaceholder: true,
+    defaultCountry: "auto",
+    ipinfoToken: "yolo",
+
+    nationalMode: false,
+    numberType: "MOBILE",
+    //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+    preferredCountries: ["sa", "ae", "qa", "om", "bh", "kw", "ma"],
+    preventInvalidNumbers: true,
+    separateDialCode: true,
+    initialCountry: "auto",
+    geoIpLookup: function (callback) {
+      $.get("http://ipinfo.io", function () {}, "jsonp").always(function (
+        resp
+      ) {
+        var countryCode = resp && resp.country ? resp.country : "";
+        callback(countryCode);
+      });
+    },
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js",
+  });
+
+  var reset = function () {
+    telInput.removeClass("error");
+    errorMsg.addClass("hide");
+    validMsg.addClass("hide");
+  };
+
+  // on blur: validate
+  telInput.blur(function () {
+    reset();
+    if ($.trim(telInput.val())) {
+      if (telInput.intlTelInput("isValidNumber")) {
+        validMsg.removeClass("hide");
+      } else {
+        telInput.addClass("error");
+        errorMsg.removeClass("hide");
+      }
     }
   });
+
+  // on keyup / change flag: reset
+  telInput.on("keyup change", reset);
+
   // buyer slider
   var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 4.4,
@@ -41,34 +97,34 @@ $(document).ready(function () {
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction"
+      type: "fraction",
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       1024: {
         slidesPerView: 4.4,
         slidesPerGroup: 1,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       769: {
         slidesPerView: 3.4,
         slidesPerGroup: 1,
-        spaceBetween: 16
+        spaceBetween: 16,
       },
       600: {
         slidesPerView: 2.4,
         slidesPerGroup: 1,
-        spaceBetween: 16
+        spaceBetween: 16,
       },
       300: {
         slidesPerView: 1.2,
         slidesPerGroup: 1,
-        spaceBetween: 16
-      }
-    }
+        spaceBetween: 16,
+      },
+    },
   });
   // we-develop
   var swiper = new Swiper(".mySwiper3", {
@@ -76,39 +132,39 @@ $(document).ready(function () {
     spaceBetween: 30,
     autoplay: {
       delay: 3000, // Set the delay between slides in milliseconds
-      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+      disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
     },
     loop: false, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction"
+      type: "fraction",
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       1024: {
         slidesPerView: 4,
-        slidesPerGroup: 1
+        slidesPerGroup: 1,
       },
       769: {
         slidesPerView: 3.4,
         slidesPerGroup: 1,
-        spaceBetween: 16
+        spaceBetween: 16,
       },
       600: {
         slidesPerView: 2.4,
         slidesPerGroup: 1,
-        spaceBetween: 16
+        spaceBetween: 16,
       },
       300: {
         slidesPerView: 2.4,
         slidesPerGroup: 1,
-        spaceBetween: 16
-      }
-    }
+        spaceBetween: 16,
+      },
+    },
   });
 
   // testimonial slider
@@ -116,18 +172,18 @@ $(document).ready(function () {
     // effect: "fade",
     autoplay: {
       delay: 3000, // Set the delay between slides in milliseconds
-      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+      disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
     },
     loop: false, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction"
+      type: "fraction",
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
   });
 
   // we-develop
@@ -136,32 +192,32 @@ $(document).ready(function () {
     spaceBetween: 30,
     autoplay: {
       delay: 3000, // Set the delay between slides in milliseconds
-      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+      disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
     },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction"
+      type: "fraction",
     },
     breakpoints: {
       1024: {
         slidesPerView: 5,
-        slidesPerGroup: 1
+        slidesPerGroup: 1,
       },
       769: {
         slidesPerView: 5,
-        slidesPerGroup: 1
+        slidesPerGroup: 1,
       },
       600: {
         slidesPerView: 4,
-        slidesPerGroup: 1
+        slidesPerGroup: 1,
       },
       300: {
         slidesPerView: 3,
-        slidesPerGroup: 1
-      }
-    }
+        slidesPerGroup: 1,
+      },
+    },
   });
   // email sending
   document
@@ -177,9 +233,9 @@ $(document).ready(function () {
       fetch("/send-email", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       })
         .then((response) => response.json())
         .then((result) => {
@@ -199,24 +255,26 @@ const selectedOptions = [];
 
 function selectOption(option, questionIndex) {
   // Remove 'active' class and hide checkmark icon from all options in this question
-  const options = document.querySelectorAll('.question-container')[questionIndex].querySelectorAll('.option');
+  const options = document
+    .querySelectorAll(".question-container")
+    [questionIndex].querySelectorAll(".option");
   options.forEach((opt) => {
-    opt.classList.remove('active');
-    opt.querySelector('.fa-check').style.display = 'none';
+    opt.classList.remove("active");
+    opt.querySelector(".fa-check").style.display = "none";
   });
 
   // Add 'active' class and display checkmark for the selected option
-  option.classList.add('active');
-  option.querySelector('.fa-check').style.display = 'inline-block';
+  option.classList.add("active");
+  option.querySelector(".fa-check").style.display = "inline-block";
 
   // Update the selected option in the array
   selectedOptions[questionIndex] = option.textContent.trim();
-  
+
   // Log the selected options (you can do something else with them)
-  console.log(`Selected options for question ${questionIndex}: ${selectedOptions[questionIndex]}`);
+  console.log(
+    `Selected options for question ${questionIndex}: ${selectedOptions[questionIndex]}`
+  );
 }
-
-
 
 // drag & drop
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
@@ -262,8 +320,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
  * @param {File} file
  */
 function updateThumbnail(dropZoneElement, file) {
-  let thumbnailElement =
-    dropZoneElement.querySelector(".drop-zone__thumb");
+  let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
 
   // First time - remove the prompt
   if (dropZoneElement.querySelector(".drop-zone__prompt")) {

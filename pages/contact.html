@@ -11,6 +11,11 @@
     />
     <!-- bootstrap 5.2.3 -->
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <!-- style -->
     <link rel="stylesheet" href="./../assets/css/style.css" />
   </head>
@@ -94,13 +99,14 @@
                   />
                 </div>
                 <div class="col-md-6">
-                  <label for="mobile" class="form-label">Mobile</label>
-                  <input
-                    type="phone"
-                    class="form-control"
-                    id="mobile"
-                    placeholder="162 2625 252"
-                  />
+                  <label for="phone" class="form-label">Mobile</label>
+                 
+                    <input
+                      id="phone"
+                      type="tel"
+                      name="phone"
+                      class="form-control"
+                    />
                 </div>
                 <div class="col-12">
                   <label for="email" class="form-label">Email</label>
@@ -506,8 +512,13 @@
     <script src="./../assets/js/smooth-scroll.js"></script>
     <!-- main js -->
     <script src="./../assets/js/main.js"></script>
+
     <script>
-      
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
     </script>
   </body>
 </html>

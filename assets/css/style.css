@@ -636,8 +636,6 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 
 /* world */
 .world {
-}
-.world {
   box-sizing: border-box;
   background: url("./../images/home/world-section/world-bg.png");
   background-position: center;
@@ -1143,6 +1141,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-weight: 700;
   line-height: normal;
   margin-bottom: 18px;
+  display: block;
 }
 .contact-form .form-control {
   color: #000;
@@ -1152,6 +1151,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   line-height: normal;
   padding: 16px 20px;
   margin-bottom: 24px;
+}
+.contact-form .iti{
+  width: 100%;
 }
 .contact-form .form-control::placeholder {
   color: #aaa;
@@ -2650,16 +2652,16 @@ footer hr {
   .contact-form form {
     margin: 0 auto;
   }
-  .contact-form .form-label{
+  .contact-form .form-label {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  .contact-form .form-control{
+  .contact-form .form-control {
     font-size: 14px;
     padding: 10px 15px;
     margin-bottom: 12px;
   }
-  .contact-form .btn{
+  .contact-form .btn {
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -2683,7 +2685,7 @@ footer hr {
     font-size: 14px;
     line-height: 24px;
   }
-  .contact-info .box-contact a{
+  .contact-info .box-contact a {
     font-size: 14px;
     padding: 10px 30px;
   }
@@ -3231,16 +3233,16 @@ footer hr {
   .contact-form form {
     margin: 0 auto;
   }
-  .contact-form .form-label{
+  .contact-form .form-label {
     font-size: 14px;
     margin-bottom: 10px;
   }
-  .contact-form .form-control{
+  .contact-form .form-control {
     font-size: 14px;
     padding: 10px 15px;
     margin-bottom: 12px;
   }
-  .contact-form .btn{
+  .contact-form .btn {
     font-size: 14px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -3254,7 +3256,7 @@ footer hr {
   .contact-info .img img {
     max-height: 300px;
   }
- 
+
   .contact-info .box-contact {
     justify-content: center;
     flex-direction: column;
@@ -3271,7 +3273,7 @@ footer hr {
     line-height: 24px;
     text-align: center;
   }
-  .contact-info .box-contact a{
+  .contact-info .box-contact a {
     font-size: 14px;
     padding: 10px 30px;
   }
