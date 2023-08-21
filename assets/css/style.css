@@ -1150,7 +1150,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   font-weight: 400;
   line-height: normal;
   padding: 16px 20px;
+  background: #F7F7F7;
   margin-bottom: 24px;
+  border: 0;
 }
 .contact-form .iti{
   width: 100%;
@@ -1179,8 +1181,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   margin-top: 147px;
   margin-bottom: 176px;
 }
-.contact-info .img img {
+.contact-info .img iframe {
   width: 100%;
+}
+.contact-info .map-right{
+  margin-left: 84px;
 }
 .contact-info .icon {
   margin-bottom: 15px;
@@ -1260,8 +1265,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
   cursor: pointer;
   color: #cccccc;
   border: 1px dashed #ccc;
@@ -2629,10 +2634,7 @@ footer hr {
   /* inquiry */
   /* home */
   /* contact-form */
-  .contact-info {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+
   .contact-form {
     background-position: right;
     padding-top: 36px;
@@ -2669,14 +2671,19 @@ footer hr {
   .drop-zone {
     font-size: 14px;
   }
+  .contact-info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .contact-info .img {
     margin-bottom: 30px;
   }
-  .contact-info .img img {
+  .contact-info .img iframe {
     max-height: 500px;
-    object-fit: cover;
   }
-
+  .contact-info .map-right{
+    margin-left: 0px;
+  }
   .contact-info .box-contact span h3 {
     font-size: 16px;
     line-height: 20px;
@@ -3253,8 +3260,11 @@ footer hr {
   .contact-info .img {
     margin-bottom: 30px;
   }
-  .contact-info .img img {
+  .contact-info .img iframe {
     max-height: 300px;
+  }
+  .contact-info .map-right{
+    margin-left: 0px;
   }
 
   .contact-info .box-contact {
