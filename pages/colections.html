@@ -203,16 +203,56 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-12">
-              <span>
-                <h2>Shirts</h2>
+              <h2 class="d-lg-block d-none">Shirts</h2>
+              <span
+                class="mob-filtering d-lg-none d-flex align-items-center justify-content-between"
+              >
+                <select class="event-type-select">
+                  <option value="men">Men</option>
+                  <option value="women">Women</option>
+                  <option value="kids">Kids</option>
+                </select>
+                <div class="collectionFilterResult">
+                  <div data-eventtype="men">
+                    <select>
+                      <option value="All">All</option>
+                      <option value="T shirt">T shirt</option>
+                      <option value="Jeans">Jeans</option>
+                      <option value="Polos">Polos</option>
+                      <option value="Trousers">Trousers</option>
+                      <option value="Shirts">Shirts</option>
+                    </select>
+                  </div>
+                  <div data-eventtype="women" class="hidden">
+                    <select>
+                      <option value="All">All</option>
+                      <option value="T shirt">T shirt</option>
+                      <option value="Jeans">Jeans</option>
+                      <option value="Polos">Polos</option>
+                      <option value="Trousers">Trousers</option>
+                      <option value="Shirts">Shirts</option>
+                    </select>
+                  </div>
+                  <div data-eventtype="kids" class="hidden">
+                    <select>
+                      <option value="All">All</option>
+                      <option value="T shirt">T shirt</option>
+                      <option value="Jeans">Jeans</option>
+                      <option value="Polos">Polos</option>
+                      <option value="Trousers">Trousers</option>
+                      <option value="Shirts">Shirts</option>
+                    </select>
+                  </div>
+                </div>
               </span>
+
               <p>
                 Tell us about your project and get connected with a TAA Expert
                 today!
               </p>
             </div>
             <div class="col-lg-3 col-12">
-              <div class="side-nav">
+              <div class="side-nav d-lg-block d-none">
                 <h5>Collections</h5>
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">

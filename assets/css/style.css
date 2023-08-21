@@ -1785,6 +1785,20 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   border: 1px solid var(--color);
   color: #e74c3c;
 }
+
+.collectionFilterResult div {
+  border: grey 1px solid;
+  width: 100px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
 .collection-part {
 }
 .collection-part {
@@ -1965,16 +1979,6 @@ footer hr {
     max-height: 80px;
   }
   /* our-buyer */
-  /* blog-section */
-  .blog-section {
-    /* margin-top: -14rem; */
-  }
-  /* blog-section */
-  /* collection-hero */
-  .collection-hero {
-    /* margin-top: -14rem; */
-  }
-  /* collection-hero */
 }
 @media (min-width: 769px) and (max-width: 991px) {
   /* header */
@@ -2311,7 +2315,7 @@ footer hr {
   /* contact-form */
   /* blog-section */
   .blog-section {
-    /* margin-top: -14rem; */
+    padding-top: 6rem;
   }
   .blog-section h2 {
     font-size: 28px;
@@ -2328,7 +2332,8 @@ footer hr {
 
   /* .collection-hero */
   .collection-hero {
-    /* margin-top: -14rem; */
+    padding-top: 6rem;
+    margin-bottom: 66px;
   }
   .collection-hero .title {
     font-size: 25px;
@@ -2345,17 +2350,40 @@ footer hr {
     text-align: center;
     margin-bottom: 25px;
   }
-  .collection-hero {
-  }
-  .collection-hero {
-  }
-  .collection-hero {
-  }
-  .collection-hero {
-  }
-  .collection-hero {
-  }
   /* .collection-hero */
+
+  /* collection-part */
+  .collection-part .event-type-select {
+    border: 0px;
+    outline: 0;
+  }
+  .collectionFilterResult div {
+    border: grey 1px solid;
+    width: 100px;
+    text-align: center;
+    background-color: transparent !important;
+    color: #000;
+    float: left;
+    transition: all 0.5s ease;
+    outline: 0;
+  }
+  .collection-part .collectionFilterResult div select {
+    border: grey 1px solid;
+    width: 100px;
+    text-align: center;
+    background-color: transparent !important;
+    color: #000;
+    float: left;
+    transition: all 0.5s ease;
+    outline: 0;
+  }
+  .collection-part p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 11px;
+    margin-bottom: 40px;
+  }
+  /* collection-part */
 
   /* footer */
   footer h4 {
@@ -2762,7 +2790,7 @@ footer hr {
 
   /* blog-section */
   .blog-section {
-    /* margin-top: -7rem; */
+    padding-top: 6rem;
   }
   .blog-section h2 {
     font-size: 24px;
@@ -2777,6 +2805,61 @@ footer hr {
   }
 
   /* blog-section */
+
+  /* .collection-hero */
+  .collection-hero {
+    padding-top: 6rem;
+    margin-bottom: 66px;
+  }
+  .collection-hero .title {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .collection-hero .desc {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .collection-hero .custom-flex {
+    flex-direction: column;
+  }
+  .collection-hero .custom-flex .content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  /* .collection-hero */
+
+  /* collection-part */
+  .collection-part .event-type-select {
+    border: 0px;
+    outline: 0;
+  }
+  .collectionFilterResult div {
+    border: grey 1px solid;
+    width: 100px;
+    text-align: center;
+    background-color: transparent !important;
+    color: #000;
+    float: left;
+    transition: all 0.5s ease;
+    outline: 0;
+  }
+  .collection-part .collectionFilterResult div select {
+    border: grey 1px solid;
+    width: 100px;
+    text-align: center;
+    background-color: transparent !important;
+    color: #000;
+    float: left;
+    transition: all 0.5s ease;
+    outline: 0;
+  }
+  .collection-part p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 11px;
+    margin-bottom: 40px;
+  }
+  /* collection-part */
 
   /* footer */
   footer h4 {

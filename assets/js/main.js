@@ -1,5 +1,19 @@
 $(document).ready(function () {
-  
+  // filtering
+  // Bind the change event handler
+  $(".event-type-select").change(function () {
+    var selectedEventType = this.value;
+    // Hide all dropdowns initially
+    $(".collectionFilterResult div").addClass("hidden");
+    // Show the dropdown for the selected event type
+    $(
+      '.collectionFilterResult div[data-eventtype="' + selectedEventType + '"]'
+    ).removeClass("hidden");
+  });
+
+  // Trigger the change event to set the default filter to "men"
+  $(".event-type-select").val("men").change();
+
   // hero slider
   var swiper = new Swiper(".mySwiper", {
     // effect: "fade",
@@ -27,34 +41,34 @@ $(document).ready(function () {
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      type: "fraction"
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-        1024: {
-          slidesPerView: 4.4,
-          slidesPerGroup: 1,
-          spaceBetween: 30,
-        },
-        769: {
-          slidesPerView: 3.4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        600: {
-          slidesPerView: 2.4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        300: {
-          slidesPerView: 1.2,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
+      1024: {
+        slidesPerView: 4.4,
+        slidesPerGroup: 1,
+        spaceBetween: 30
       },
+      769: {
+        slidesPerView: 3.4,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      },
+      600: {
+        slidesPerView: 2.4,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      },
+      300: {
+        slidesPerView: 1.2,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      }
+    }
   });
   // we-develop
   var swiper = new Swiper(".mySwiper3", {
@@ -68,55 +82,55 @@ $(document).ready(function () {
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      type: "fraction"
     },
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-        1024: {
-          slidesPerView: 4,
-          slidesPerGroup: 1,
-        },
-        769: {
-          slidesPerView: 3.4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        600: {
-          slidesPerView: 2.4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
-        300: {
-          slidesPerView: 2.4,
-          slidesPerGroup: 1,
-          spaceBetween: 16,
-        },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 1
       },
+      769: {
+        slidesPerView: 3.4,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      },
+      600: {
+        slidesPerView: 2.4,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      },
+      300: {
+        slidesPerView: 2.4,
+        slidesPerGroup: 1,
+        spaceBetween: 16
+      }
+    }
   });
 
-    // testimonial slider
-    var swiper = new Swiper(".mySwiper4", {
-      // effect: "fade",
-      autoplay: {
-        delay: 3000, // Set the delay between slides in milliseconds
-        disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
-      },
-      loop: false, // Set to true for infinite loop
-      speed: 1000, // Adjust the speed value to control the slide transition speed
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction"
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
-    });
+  // testimonial slider
+  var swiper = new Swiper(".mySwiper4", {
+    // effect: "fade",
+    autoplay: {
+      delay: 3000, // Set the delay between slides in milliseconds
+      disableOnInteraction: false // Allow autoplay to continue even when the user interacts with the slider
+    },
+    loop: false, // Set to true for infinite loop
+    speed: 1000, // Adjust the speed value to control the slide transition speed
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction"
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
 
-     // we-develop
+  // we-develop
   var swiper = new Swiper(".brandsSlider", {
     slidesPerView: 5,
     spaceBetween: 30,
@@ -128,26 +142,26 @@ $(document).ready(function () {
     speed: 1000, // Adjust the speed value to control the slide transition speed
     pagination: {
       el: ".swiper-pagination",
-      type: "fraction",
+      type: "fraction"
     },
     breakpoints: {
-        1024: {
-          slidesPerView: 5,
-          slidesPerGroup: 1,
-        },
-        769: {
-          slidesPerView: 5,
-          slidesPerGroup: 1,
-        },
-        600: {
-          slidesPerView: 4,
-          slidesPerGroup: 1,
-        },
-        300: {
-          slidesPerView: 3,
-          slidesPerGroup: 1,
-        },
+      1024: {
+        slidesPerView: 5,
+        slidesPerGroup: 1
       },
+      769: {
+        slidesPerView: 5,
+        slidesPerGroup: 1
+      },
+      600: {
+        slidesPerView: 4,
+        slidesPerGroup: 1
+      },
+      300: {
+        slidesPerView: 3,
+        slidesPerGroup: 1
+      }
+    }
   });
   // email sending
   document
@@ -177,6 +191,4 @@ $(document).ready(function () {
           // Handle any errors that occur during the fetch
         });
     });
-
-   
 });
