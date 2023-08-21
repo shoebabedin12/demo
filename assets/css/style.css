@@ -1571,9 +1571,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   line-height: 29px; /* 145% */
   margin-bottom: 45px;
 }
-.collection-part .side-nav .accordion {
-  /* --bs-accordion-border-width: 0; */
-}
+
 .collection-part .side-nav .accordion .accordion-item {
   border-top: 0px;
   border-left: 0px;
@@ -1953,6 +1951,11 @@ footer hr {
     max-height: 80px;
   }
   /* our-buyer */
+  /* collection-hero */
+  .collection-hero {
+    margin-top: -14rem;
+  }
+  /* collection-hero */
 }
 @media (min-width: 769px) and (max-width: 991px) {
   /* header */
@@ -2303,6 +2306,37 @@ footer hr {
     flex-direction: row-reverse;
   }
   /* blog-section */
+
+  /* .collection-hero */
+  .collection-hero {
+    margin-top: -14rem;
+  }
+  .collection-hero .title {
+    font-size: 25px;
+    line-height: 39px;
+  }
+  .collection-hero .desc {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .collection-hero .custom-flex {
+    flex-direction: column;
+  }
+  .collection-hero .custom-flex .content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .collection-hero {
+  }
+  .collection-hero {
+  }
+  .collection-hero {
+  }
+  .collection-hero {
+  }
+  .collection-hero {
+  }
+  /* .collection-hero */
 
   /* footer */
   footer h4 {
