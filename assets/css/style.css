@@ -2633,6 +2633,8 @@ footer hr {
   }
   .contact-form {
     background-position: right;
+    padding-top: 36px;
+    padding-bottom: 48px;
   }
   .contact-form h2 {
     text-align: center;
@@ -2643,18 +2645,47 @@ footer hr {
     text-align: center;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 30px;
   }
   .contact-form form {
     margin: 0 auto;
   }
+  .contact-form .form-label{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .contact-form .form-control{
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+  }
+  .contact-form .btn{
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
   .drop-zone {
-    font-size: 15px;
+    font-size: 14px;
   }
   .contact-info .img {
     margin-bottom: 30px;
   }
   .contact-info .img img {
-    max-height: 300px;
+    max-height: 500px;
+    object-fit: cover;
+  }
+
+  .contact-info .box-contact span h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact-info .box-contact span p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .contact-info .box-contact a{
+    font-size: 14px;
+    padding: 10px 30px;
   }
   /* contact-form */
   /* blog-section */
@@ -3183,6 +3214,8 @@ footer hr {
   }
   .contact-form {
     background-position: right;
+    padding-top: 36px;
+    padding-bottom: 48px;
   }
   .contact-form h2 {
     text-align: center;
@@ -3193,9 +3226,27 @@ footer hr {
     text-align: center;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 30px;
   }
   .contact-form form {
     margin: 0 auto;
+  }
+  .contact-form .form-label{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .contact-form .form-control{
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+  }
+  .contact-form .btn{
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .drop-zone {
+    font-size: 14px;
   }
   .contact-info .img {
     margin-bottom: 30px;
@@ -3203,19 +3254,26 @@ footer hr {
   .contact-info .img img {
     max-height: 300px;
   }
-  .drop-zone {
-    font-size: 15px;
-  }
+ 
   .contact-info .box-contact {
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    padding: 20px 16px;
   }
   .contact-info .box-contact span h3 {
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
   }
   .contact-info .box-contact span p {
+    font-size: 14px;
+    line-height: 24px;
     text-align: center;
+  }
+  .contact-info .box-contact a{
+    font-size: 14px;
+    padding: 10px 30px;
   }
   /* contact-form */
 
