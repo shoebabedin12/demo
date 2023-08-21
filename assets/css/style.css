@@ -2127,20 +2127,38 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 .multi_step_form form .options .option.active {
   background: rgba(231, 76, 60, 0.1);
   color: #e74c3c;
 }
-.multi_step_form form .options {
+.multi_step_form form .drop-zone {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  margin-bottom: 58px;
+  color: #666;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.multi_step_form form .options {
+.multi_step_form form .nextPrevBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
 }
-.multi_step_form form .options {
-}
-.multi_step_form form .options {
-}
-.multi_step_form form {
+.multi_step_form form .nextPrevBtn .nextbtn {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 11px 38px;
+  background: #e74c3c;
 }
 .multi_step_form form {
 }
