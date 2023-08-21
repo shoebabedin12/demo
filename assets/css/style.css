@@ -1261,7 +1261,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   color: #cccccc;
   border: 1px dashed #ccc;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0px;
   margin-bottom: 27px;
 }
 
