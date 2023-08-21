@@ -919,20 +919,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 /* common-bg */
 /* multi-step-form */
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
-.multi-step-form {
-}
+
 
 /*form styles*/
 #msform {
@@ -1365,9 +1352,10 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 #multistepsform .action-button:hover,
 #multistepsform .action-button:focus {
-  box-shadow: 0 0 0 2px #f08a5d, 0 0 0 3px #ff976;
+  box-shadow: 0 0 0 2px #f08a5d, 0 0 0 3px #ff7976, 0 0 0 0 transparent, 0 0 0 0 transparent;
   color: #fff;
 }
+
 #multistepsform .fs-title {
   font-size: 15px;
   text-transform: uppercase;
@@ -2146,40 +2134,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   padding: 11px 38px;
   background: #e74c3c;
 }
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
-.multi_step_form {
-}
+
 /* inquery-form / multi-step-form */
 
 /* footer */
