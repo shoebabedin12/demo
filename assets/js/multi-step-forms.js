@@ -34,7 +34,8 @@ function nextPrev(n) {
 
   if (currentTab >= x.length) {
     // Form submission or additional processing
-    window.location.href = "./../../index.html"; // Corrected navigation
+    window.location.href = "/index.html"; // Corrected navigation
+    console.log("URL:", window.location.href);
     alert("Form submitted!");
   }
   
