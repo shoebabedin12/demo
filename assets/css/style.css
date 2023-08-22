@@ -2141,8 +2141,27 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 14rem;
+  padding-top: 167px;
   margin-bottom: 165px;
+}
+.multi_step_form .title {
+  color: #000;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px; /* 152.632% */
+  max-width: 566px;
+  margin: 0 auto 16px;
+}
+.multi_step_form .desc {
+  color: #666;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px; /* 181.25% */
+  margin-bottom: 50px;
 }
 .multi_step_form form {
   background: #fff;
@@ -2247,13 +2266,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .multi_step_form form .tab:last-child div > div:last-child .form-control {
   margin-bottom: 30px;
 }
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-.multi_step_form form {
-}
-/* inquery-form / multi-step-form */
+/* inquery-form / multi-step-form */ 
 
 /* footer */
 footer {
@@ -2960,7 +2973,20 @@ footer hr {
     padding: 15px 52px;
   }
   /* what We Do It */
-
+  /* multi_step_form */
+  .multi_step_form{
+    padding-top: 67px;
+    margin-bottom: 65px;
+  }
+  .multi_step_form .title{
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .multi_step_form .desc{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  /* multi_step_form */
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -3629,6 +3655,21 @@ footer hr {
   }
   /* what We Do It */
 
+  /* multi_step_form */
+  .multi_step_form{
+    padding-top: 67px;
+    margin-bottom: 65px;
+  }
+  .multi_step_form .title{
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .multi_step_form .desc{
+    font-size: 14px;
+    line-height: 24px;
+  }
+  /* multi_step_form */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -3718,7 +3759,56 @@ footer hr {
     line-height: normal;
     padding: 15px 10px;
   }
+
   /* what We Do It */
+
+  /* multi-step-form */
+  .multi_step_form {
+    padding-top: 60px;
+    margin-bottom: 65px;
+  }
+  .multi_step_form .step_status .step .box p {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+  }
+  .multi_step_form .step_status {
+    margin-bottom: 34px;
+  }
+  .multi_step_form form {
+    padding: 20px 15px;
+  }
+  .multi_step_form form .question {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  .multi_step_form form .options.flex-option {
+    margin-bottom: 20px;
+  }
+
+  .multi_step_form form .options .option {
+    font-size: 14px;
+    padding: 7px 5px;
+  }
+  .multi_step_form form .form-label {
+    margin-bottom: 10px;
+  }
+  .multi_step_form form .tab:last-child div > div:last-child .form-control {
+    margin-bottom: 20px;
+  }
+  .multi_step_form form .form-label {
+    font-size: 14px;
+  }
+  .multi_step_form form .form-control {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .multi_step_form form .nextPrevBtn .nextbtn {
+    font-size: 14px;
+    padding: 8px 22px;
+  }
+  /* multi-step-form */
 
   /* footer */
   footer {
