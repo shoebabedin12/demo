@@ -2170,6 +2170,20 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   margin-bottom: 8px;
   cursor: pointer;
 }
+.multi_step_form form .options.flex-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7f7;
+  padding: 9px;
+  margin-bottom: 40px;
+}
+.multi_step_form form .options.flex-option .option {
+  margin-bottom: 0;
+}
+.multi_step_form form .options.flex-option i {
+  display: none !important;
+}
 .multi_step_form form .options .option.active {
   background: rgba(231, 76, 60, 0.1);
   color: #e74c3c;
@@ -2177,7 +2191,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .multi_step_form form .drop-zone {
   padding-top: 58px;
   padding-bottom: 58px;
-  margin-bottom: 58px;
+  margin-bottom: 30px;
   color: #666;
   text-align: center;
   font-size: 14px;
@@ -2188,8 +2202,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .multi_step_form form .nextPrevBtn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 10px;
+}
+.multi_step_form form .tab:first-child .nextPrevBtn {
+  justify-content: flex-end;
 }
 .multi_step_form form .nextPrevBtn .nextbtn {
   color: #fff;
@@ -2201,7 +2218,41 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   padding: 11px 38px;
   background: #e74c3c;
 }
-
+.multi_step_form form .form-label {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.multi_step_form form .form-control {
+  color: #aaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #f7f7f7;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 16px 20px;
+  margin-bottom: 52px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.multi_step_form form .tab:last-child div > div:last-child .form-control {
+  margin-bottom: 30px;
+}
+.multi_step_form form {
+}
+.multi_step_form form {
+}
+.multi_step_form form {
+}
 /* inquery-form / multi-step-form */
 
 /* footer */

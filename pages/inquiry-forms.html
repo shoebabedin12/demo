@@ -171,11 +171,11 @@
                       </div>
 
                       <div>
-                        <div class="question">
+                        <div class="question mb-0">
                           What type of services are you looking for?
                         </div>
                         <div class="options">
-                          <div class="option">
+                          <div class="option ps-0">
                             Please attach reference images of similar items to
                             this email.
                           </div>
@@ -209,9 +209,51 @@
                 <div class="tab">
                   <div class="row">
                     <div class="col-lg-12">
-                      <div class="">two</div>
+                      <div class="question-container">
+                        <div class="question">
+                          What type of services are you looking for?
+                        </div>
+                        <div class="options">
+                          <div class="option" onclick="selectOption(this, 2)">
+                            ASAP
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this, 2)">
+                            I'm Flexible
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this, 2)">
+                            I don't know yet
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="question-container">
+                        <div class="question">
+                          What is your expected total quantity?
+                        </div>
+                        <div class="options flex-option">
+                          <div class="option" onclick="selectOption(this, 3)">
+                            $0-$3k
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this, 3)">
+                            $3-$10k
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this, 3)">
+                            $10k-$50k
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                          <div class="option" onclick="selectOption(this, 3)">
+                            $50k+
+                            <i class="fas fa-check" style="display: none"></i>
+                          </div>
+                        </div>
+                      </div>
                       <div class="nextPrevBtn">
                         <button
+                          class="nextbtn"
                           type="button"
                           id="prevBtn1"
                           onclick="nextPrev(-1, 'prevBtn1')"
@@ -219,6 +261,7 @@
                           Previous
                         </button>
                         <button
+                          class="nextbtn"
                           class="shipping"
                           type="button"
                           id="nextBtn1"
@@ -233,22 +276,56 @@
                 <div class="tab">
                   <div class="row">
                     <div class="col-lg-12">
-                      <div>three</div>
-                      <button
-                        type="button"
-                        id="prevBtn1"
-                        onclick="nextPrev(-1, 'prevBtn1')"
-                      >
-                        Previous
-                      </button>
-                      <button
-                        class="shipping"
-                        type="submit"
-                        id="nextBtn1"
-                        onclick="nextPrev(1, 'nextBtn1')"
-                      >
-                        Submit
-                      </button>
+                      <div>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Full Name"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Email Address"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label"
+                            >Anything else we should know?</label
+                          >
+                          <textarea
+                            class="form-control"
+                            name=""
+                            id=""
+                            rows="4"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="nextPrevBtn">
+                        <button
+                          class="nextbtn"
+                          type="button"
+                          id="prevBtn1"
+                          onclick="nextPrev(-1, 'prevBtn1')"
+                        >
+                          Previous
+                        </button>
+                        <button
+                          class="nextbtn"
+                          type="submit"
+                          id="nextBtn1"
+                          onclick="nextPrev(1, 'nextBtn1')"
+                        >
+                          Submit
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
