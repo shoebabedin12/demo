@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    // coutup
+    $('.counter-count').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+        
+        //chnage count up speed here
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
   // filtering
   // Bind the change event handler
   $(".event-type-select").change(function () {
@@ -164,6 +178,47 @@ $(document).ready(function () {
       },
     },
   });
+
+ // blog-Slider
+ var swiper = new Swiper(".blogSlider", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000, // Set the delay between slides in milliseconds
+    disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
+  },
+  loop: false, // Set to true for infinite loop
+  speed: 1000, // Adjust the speed value to control the slide transition speed
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+    },
+    769: {
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+    600: {
+      slidesPerView: 2.4,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+    300: {
+      slidesPerView: 2.4,
+      slidesPerGroup: 1,
+      spaceBetween: 16,
+    },
+  },
+});
 // country code
   var telInput = $("#phone"),
     errorMsg = $("#error-msg"),
