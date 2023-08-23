@@ -2522,32 +2522,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   padding: 12px 15px;
   border-radius: 0;
 }
-.our-resource .blog-inquery {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
-.our-resource {
-}
+
 /* blog page */
 
 /* footer */
@@ -3269,6 +3244,83 @@ footer hr {
     line-height: 24px;
   }
   /* multi_step_form */
+
+  /* blog page */
+  .blog-slider {
+    padding-top: 60px;
+    margin-bottom: 70px;
+  }
+  .blog-slider h5 {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  .blog-slider ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 34px;
+    overflow-x: auto;
+    margin-bottom: 70px;
+  }
+  .blog-slider ul li a {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .blog-slider h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+  .blog-slider p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .blog-slider .description h4 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+  .blog-slider .description p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .our-resource {
+    margin-bottom: 65px;
+  }
+  .our-resource h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+  .our-resource p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+  .our-resource .img .price {
+    font-size: 12px;
+  }
+  .our-resource h4 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+  .our-resource p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .our-resource nav .pagination .page-link {
+    font-size: 16px;
+  }
+  /* blog page */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -3952,6 +4004,90 @@ footer hr {
   }
   /* multi_step_form */
 
+  /* blog page */
+  .blog-slider {
+    padding-top: 60px;
+    margin-bottom: 70px;
+  }
+  .blog-slider h5 {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  .blog-slider ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 34px;
+    overflow-x: auto;
+    margin-bottom: 70px;
+    padding-bottom: 8px;
+  }
+  .blog-slider ul li {
+    flex: 1 0 auto;
+  }
+  .blog-slider ul li a {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .blog-slider h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+  .blog-slider p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .blog-slider .img .price {
+    font-size: 12px;
+    padding: 10px 13px;
+  }
+  .blog-slider .description h4 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+  .blog-slider .description p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .our-resource {
+    margin-bottom: 65px;
+  }
+  .our-resource h2 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+  .our-resource p {
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+  .our-resource .img .price {
+    font-size: 12px;
+  }
+  .our-resource h4 {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+  .our-resource p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .our-resource nav .pagination .page-link {
+    font-size: 16px;
+  }
+  /* blog page */
+
   /* footer */
   footer h4 {
     margin-top: 20px;
@@ -4091,6 +4227,11 @@ footer hr {
     padding: 8px 22px;
   }
   /* multi-step-form */
+  /* blog page */
+  .our-resource nav .pagination {
+    justify-content: center;
+  }
+  /* blog page */
 
   /* footer */
   footer {

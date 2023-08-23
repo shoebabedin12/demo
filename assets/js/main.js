@@ -187,7 +187,7 @@ $(document).ready(function () {
     delay: 3000, // Set the delay between slides in milliseconds
     disableOnInteraction: false, // Allow autoplay to continue even when the user interacts with the slider
   },
-  loop: false, // Set to true for infinite loop
+  loop: true, // Set to true for infinite loop
   speed: 1000, // Adjust the speed value to control the slide transition speed
   pagination: {
     el: ".swiper-pagination",
@@ -203,7 +203,7 @@ $(document).ready(function () {
       slidesPerGroup: 1,
     },
     769: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 16,
     },
@@ -213,7 +213,7 @@ $(document).ready(function () {
       spaceBetween: 16,
     },
     300: {
-      slidesPerView: 2.4,
+      slidesPerView: 1.2,
       slidesPerGroup: 1,
       spaceBetween: 16,
     },
