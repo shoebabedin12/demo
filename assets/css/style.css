@@ -2312,7 +2312,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* blog page */
 .blog-slider {
   padding-top: 115px;
-  margin-bottom: 125px;
+  margin-bottom: 80px;
 }
 .blog-slider h2 {
   color: #000;
@@ -2344,8 +2344,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 .blog-slider .img .price {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   background-color: var(--color);
   color: #fff;
   text-align: center;
@@ -2375,7 +2375,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .our-resource {
   margin-bottom: 165px;
 }
-.our-resource h2 {
+.our-resource .title {
   color: #000;
   font-size: 38px;
   font-style: normal;
@@ -2383,7 +2383,7 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   line-height: 58px; /* 152.632% */
   margin-bottom: 16px;
 }
-.our-resource p {
+.our-resource .desc {
   color: #666;
   font-size: 16px;
   font-style: normal;
@@ -2405,8 +2405,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 }
 .our-resource .img .price {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   background-color: var(--color);
   color: #fff;
   text-align: center;
@@ -2475,9 +2475,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   padding-left: 0;
-  margin-bottom: 75px;
+  margin-bottom: 72px;
 }
 .our-resource .side-nav ul li a {
   color: #000;
@@ -3294,12 +3294,12 @@ footer hr {
   .our-resource {
     margin-bottom: 65px;
   }
-  .our-resource h2 {
+  .our-resource .title {
     font-size: 25px;
     line-height: 39px;
     margin-bottom: 10px;
   }
-  .our-resource p {
+  .our-resource .desc {
     font-size: 16px;
     line-height: 29px;
     margin-bottom: 40px;
@@ -4061,12 +4061,12 @@ footer hr {
   .our-resource {
     margin-bottom: 65px;
   }
-  .our-resource h2 {
+  .our-resource .title {
     font-size: 25px;
     line-height: 39px;
     margin-bottom: 10px;
   }
-  .our-resource p {
+  .our-resource .desc {
     font-size: 16px;
     line-height: 29px;
     margin-bottom: 40px;
