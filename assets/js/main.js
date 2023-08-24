@@ -1,4 +1,16 @@
 $(document).ready(function () {
+   // sticky nav
+   var btn = $('.navbar');
+
+   $(window).scroll(function() {
+     if ($(window).scrollTop() > 300) {
+       btn.addClass('sticky');
+     } else {
+       btn.removeClass('sticky');
+     }
+   });
+
+   // sticky nav
     // coutup
     $('.counter-count').each(function () {
       $(this).prop('Counter',0).animate({
@@ -37,10 +49,11 @@ $(document).ready(function () {
     },
     loop: true, // Set to true for infinite loop
     speed: 1000, // Adjust the speed value to control the slide transition speed
+  
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
       type: "fraction",
-    },
+  },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -64,17 +77,17 @@ $(document).ready(function () {
     },
     breakpoints: {
       1024: {
-        slidesPerView: 4.4,
+        slidesPerView: 4.2,
         slidesPerGroup: 1,
         spaceBetween: 30,
       },
       769: {
-        slidesPerView: 3.4,
+        slidesPerView: 3.2,
         slidesPerGroup: 1,
         spaceBetween: 16,
       },
       600: {
-        slidesPerView: 2.4,
+        slidesPerView: 2.2,
         slidesPerGroup: 1,
         spaceBetween: 16,
       },
