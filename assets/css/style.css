@@ -157,13 +157,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 /* home */
 /* hero */
 .hero {
-  background-image: url("./../images/home/hero-slider/bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  overflow: hidden;
 }
-.hero .overlay {
+.hero .swiper .swiper-slide .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -174,9 +170,15 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
     rgba(0, 0, 0, 0.9) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  z-index: -1;
 }
-.hero .swiper {
-  padding: 230px 0;
+.hero .swiper .swiper-slide {
+  padding-top: 230px;
+  padding-bottom: 230px;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
 .hero .swiper h4 {
   background-color: rgba(255, 255, 255, 0.9);
@@ -354,8 +356,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   fill: #a1a1a1;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.buyer-swiper-button-next:after,
+.buyer-swiper-button-prev:after {
   display: none;
 }
 
@@ -401,7 +403,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   line-height: 29px;
   margin-bottom: 0px;
 }
-.our-buyer .swiper .swiper-slide .swiper-button-next {
+.our-buyer .swiper .swiper-slide .buyer-swiper-button-next {
+  position: absolute;
   top: 50%;
   left: -70px;
   right: auto;
@@ -422,6 +425,12 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   -o-transform: translate(0%, -50%);
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-buyer .swiper-slide .buyer-swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
 }
 
 /* our-buyer */
@@ -1705,6 +1714,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   border: 1.5px solid #eee;
   background: #fff;
   padding: 39px 40px 39px 34px;
+  position: sticky;
+  top: 8rem;
 }
 .collection-part .side-nav h5 {
   color: #000;
@@ -1788,7 +1799,9 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
 .collection-part .side-nav .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-icon);
 }
-
+.collection-part .col-lg-4 {
+  height: 100%;
+}
 .collection-part .img {
   max-height: 432px;
   height: 100%;
@@ -1874,6 +1887,8 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   padding-bottom: 70px;
 }
 .collection-part .description .style {
@@ -3175,7 +3190,7 @@ footer hr {
   }
   /* who-we-are */
   /* our-buyer */
-  .our-buyer .swiper .swiper-slide .swiper-button-next {
+  .our-buyer .swiper .swiper-slide .buyer-swiper-button-next {
     left: -3.4rem;
     max-width: 80px;
     max-height: 80px;
@@ -3242,8 +3257,9 @@ footer hr {
   /* header */
   /* home */
   /* hero slider */
-  .hero .swiper {
-    padding: 151px 0;
+  .hero .swiper .swiper-slide {
+    padding-top: 151px;
+    padding-bottom: 151px;
   }
   /* hero slider */
   /* .who-we-are */
@@ -3290,7 +3306,7 @@ footer hr {
     margin-left: 1rem;
     margin-bottom: 65px;
   }
-  .our-buyer .swiper .swiper-slide .swiper-button-next {
+  .our-buyer .swiper .swiper-slide .buyer-swiper-button-next {
     left: -2.4rem;
     max-width: 64px;
     max-height: 64px;
@@ -4004,8 +4020,9 @@ footer hr {
 
   /* home */
   /* hero slider */
-  .hero .swiper {
-    padding: 151px 0;
+  .hero .swiper .swiper-slide {
+    padding-top: 151px;
+    padding-bottom: 151px;
   }
   .hero .swiper h4 {
     font-size: 18px;
@@ -4087,7 +4104,7 @@ footer hr {
   .our-buyer .swiper .swiper-slide .img img {
     max-height: 314px;
   }
-  .our-buyer .swiper .swiper-slide .swiper-button-next {
+  .our-buyer .swiper .swiper-slide .buyer-swiper-button-next {
     left: -2.4rem;
     max-width: 55px;
     max-height: 55px;
@@ -4229,6 +4246,7 @@ footer hr {
     display: none;
   }
   .testimonial .img {
+    display: none;
     margin-bottom: 28px;
   }
   .testimonial .swiper h4 {
@@ -4851,8 +4869,9 @@ footer hr {
 
   /* home */
   /* hero slider */
-  .hero .swiper {
-    padding: 151px 0;
+  .hero .swiper .swiper-slide {
+    padding-top: 151px;
+    padding-bottom: 151px;
   }
   .hero .swiper h4 {
     font-size: 18px;
@@ -4865,6 +4884,11 @@ footer hr {
   }
 
   /* hero slider */
+  /* production-sample */
+  .production-sample {
+    background: url("./../images/home/production-sample/production-sample-mob.png");
+  }
+  /* production-sample */
   /* we-develop */
   .we-develop .swiper .img .overlay p {
     font-size: 13px;

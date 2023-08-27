@@ -61,7 +61,7 @@ $(document).ready(function () {
   });
 
   // buyer slider
-  var swiper = new Swiper(".mySwiper2", {
+  var swiper = new Swiper(".buyer", {
     slidesPerView: 4.4,
     spaceBetween: 40,
     // centeredSlides: true,
@@ -72,8 +72,8 @@ $(document).ready(function () {
       type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".buyer-swiper-button-next",
+      prevEl: ".buyer-swiper-button-prev",
     },
     breakpoints: {
       1024: {
