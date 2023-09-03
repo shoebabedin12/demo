@@ -152,14 +152,38 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
+header .dropdown-item {
+  color: var(--color1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 11px 19px;
+}
+header .dropdown-menu {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  overflow: hidden;
+  border: 0;
+}
+header .dropdown-item:focus,
+header .dropdown-item.active,
+header .dropdown-item:hover {
+  color: #fff;
+  background-color: var(--color);
+}
 /* header */
 
 /* home */
 /* hero */
 .hero {
   overflow: hidden;
+  position: relative;
+  background: url("./../images/home/hero-slider/bg.png");
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
-.hero .swiper .swiper-slide .overlay {
+.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -170,15 +194,11 @@ header .navbar .navbar-nav .nav-item .nav-link.btn {
     rgba(0, 0, 0, 0.9) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  z-index: -1;
 }
 .hero .swiper .swiper-slide {
   padding-top: 230px;
   padding-bottom: 230px;
   position: relative;
-  background-position: center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
 }
 .hero .swiper h4 {
   background-color: rgba(255, 255, 255, 0.9);
@@ -3254,6 +3274,12 @@ footer hr {
   header .navbar .navbar-nav .nav-item .nav-link {
     padding: 0 0;
   }
+  header .dropdown-item:focus,
+  header .dropdown-item.active,
+  header .dropdown-item:hover {
+    color: var(--color);
+    background-color: transparent;
+  }
   /* header */
   /* home */
   /* hero slider */
@@ -4015,6 +4041,12 @@ footer hr {
   }
   header .navbar .navbar-nav .nav-item .nav-link {
     padding-left: 0;
+  }
+  header .dropdown-item:focus,
+  header .dropdown-item.active,
+  header .dropdown-item:hover {
+    color: var(--color);
+    background-color: transparent;
   }
   /* navbar */
 
