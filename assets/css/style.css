@@ -1827,6 +1827,7 @@ header .dropdown-item:hover {
   height: 100%;
   position: relative;
   margin-bottom: 26px;
+  overflow: hidden;
 }
 .collection-part .img img {
   width: 100%;
@@ -2102,6 +2103,7 @@ header .dropdown-item:hover {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
+
 .weServe .box:hover {
   background: #e74c3c;
   transition: all linear 0.3s;
@@ -4554,6 +4556,7 @@ footer hr {
   .weServe .box {
     min-height: 282px;
   }
+
   .countdownVisitor {
     margin-bottom: 65px;
   }
